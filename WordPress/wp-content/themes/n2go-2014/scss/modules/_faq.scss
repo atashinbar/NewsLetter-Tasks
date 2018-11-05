@@ -1,0 +1,50 @@
+.#{$projectPrefix}faq {
+	margin-bottom: 5rem;
+}
+
+.n2go-grid[data-num-items-per-row="2"] > .n2go-gridItem {
+	&.#{$projectPrefix}faq {
+		width: 600px;
+	}
+}
+
+.#{$projectPrefix}faq_question {
+	background: image-url("../images/glyphicons/blue/circle_question_mark.png") no-repeat scroll left 4px;
+	margin-bottom: 1.2rem !important;
+	min-height: 2.9rem;
+	padding-left: 4rem;
+}
+
+.#{$projectPrefix}faq_answer {
+	background: image-url("../images/glyphicons/lightgray/circle_exclamation_mark.png") no-repeat scroll left 14px;
+	border-top: 1px dashed #CCCCCC;
+	margin: auto;
+	min-height: 4.5rem;
+	padding: 1.2rem 0 1.2rem 4rem;
+}
+
+.n2go-grid[data-num-items-per-row="2"] > .n2go-gridItem {
+	&.#{$projectPrefix}faq_sidebar {
+		padding-left: 3rem;
+		width: 45rem;
+	}
+}
+
+@media ( max-width: 749px ) {
+	.n2go-grid[data-num-items-per-row="2"] > .n2go-gridItem {
+		&.#{$projectPrefix}faq {
+			width: 100%;
+		}
+
+		&.#{$projectPrefix}faq_sidebar {
+			padding-left: 0;
+			width: 100%;
+
+			.#{$projectPrefix}searchForm-singleHelpTopic {
+				input[type=text] {
+					width: 22rem;
+				}
+			}
+		}
+	}
+}

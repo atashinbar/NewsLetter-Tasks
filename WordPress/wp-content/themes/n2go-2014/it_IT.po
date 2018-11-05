@@ -1,0 +1,1216 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Newsletter2Go 2014\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Thu Dec 03 2015 00:08:28 GMT+0100 (CET)\n"
+"PO-Revision-Date: Fri Feb 12 2016 09:10:33 GMT+0100 (Central Europe Standard "
+"Time)\n"
+"Last-Translator: Angela Antonicelli <antonicelli@newsletter2go.com>\n"
+"Language-Team: \n"
+"Language: Italian\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Loco-Target-Locale: it_IT\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: comments.php:51
+#, php-format
+msgid ""
+"<cite class=\"n2go-blogPostComment_authorName\">%s</cite> <span class=\"n2go-"
+"blogPostComment_authorSays\">-</span>"
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: comments.php:56
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: comments.php:59
+msgid "(Edit)"
+msgstr ""
+
+#: comments.php:63
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: comments.php:111
+msgid "Comments are closed"
+msgstr ""
+
+#: functions.php:281
+msgid "Feature (Single)"
+msgstr ""
+
+#: functions.php:321
+msgid "Feature (Overview)"
+msgstr ""
+
+#: functions.php:357
+msgid "Features (Home)"
+msgstr ""
+
+#: functions.php:396
+msgid "Home"
+msgstr ""
+
+#: functions.php:499
+msgid "Pricing"
+msgstr ""
+
+#: functions.php:615
+msgid "Career"
+msgstr ""
+
+#: functions.php:648
+msgid "Contact"
+msgstr ""
+
+#: functions.php:670
+msgid "Partner"
+msgstr ""
+
+#: functions.php:687
+msgid "Partner Landingpage"
+msgstr ""
+
+#: functions.php:742
+msgid "Partner (old)"
+msgstr ""
+
+#: functions.php:758
+msgid "SEA (old)"
+msgstr ""
+
+#: functions.php:830
+msgid "Press"
+msgstr ""
+
+#: functions.php:865
+msgid "References"
+msgstr ""
+
+#: functions.php:890
+msgid "Registration"
+msgstr ""
+
+#: functions.php:915
+msgid "SEO"
+msgstr ""
+
+#: functions.php:950
+msgid "SEA"
+msgstr ""
+
+#: functions.php:974
+msgid "Imprint"
+msgstr ""
+
+#: functions.php:988
+msgid "AGB"
+msgstr ""
+
+#: functions/widgets/author.php:6
+msgid "Author Widget"
+msgstr ""
+
+#: functions/widgets/author.php:7
+msgid "N2Go Author Widget"
+msgstr ""
+
+#: functions/widgets/author.php:38
+msgid "About the author:"
+msgstr ""
+
+#: functions/widgets/author.php:89 /functions/widgets/postTags.php:83
+#: functions/widgets/recentPosts.php:146
+msgid "Title:"
+msgstr ""
+
+#: functions/widgets/newsletterForm.php:6
+msgid "Newsletter Sign-Up Form"
+msgstr ""
+
+#: functions/widgets/newsletterForm.php:7
+msgid "N2Go Newsletter Sign-Up"
+msgstr ""
+
+#: functions/widgets/newsletterForm.php:38
+msgid "Sign up for our newsletter!"
+msgstr ""
+
+#: functions/widgets/newsletterForm.php:39
+msgid "YOUR EMAIL"
+msgstr ""
+
+#: functions/widgets/newsletterForm.php:40
+msgid "SIGN UP"
+msgstr ""
+
+#: functions/widgets/newsletterForm.php:41
+msgid "Jederzeit abbestellbar. Keine Adressweitergabe!"
+msgstr ""
+
+#: functions/widgets/newsletterForm.php:101
+msgid "CTA Text:"
+msgstr ""
+
+#: functions/widgets/newsletterForm.php:107
+msgid "Email Placeholder Text:"
+msgstr ""
+
+#: functions/widgets/newsletterForm.php:113
+msgid "Submit Button Text:"
+msgstr ""
+
+#: functions/widgets/newsletterForm.php:119
+msgid "Info Text:"
+msgstr ""
+
+#: functions/widgets/newsletterForm.php:125
+msgid "Tracking Code:"
+msgstr ""
+
+#: functions/widgets/postTags.php:6
+msgid "Post Tags Widget"
+msgstr ""
+
+#: functions/widgets/postTags.php:7
+msgid "N2Go Post Tags"
+msgstr ""
+
+#: functions/widgets/postTags.php:42
+msgid "Tags:"
+msgstr ""
+
+#: functions/widgets/recentPosts.php:7
+msgid "Your site&#8217;s most recent Posts."
+msgstr ""
+
+#: functions/widgets/recentPosts.php:8
+msgid "N2Go Recent Posts"
+msgstr ""
+
+#: functions/widgets/recentPosts.php:39
+msgid "Recent Posts"
+msgstr ""
+
+#: functions/widgets/recentPosts.php:149
+msgid "Number of posts to show:"
+msgstr ""
+
+#. Name of the template
+msgid "Help Topics Overview"
+msgstr ""
+
+#. Name of the template
+msgid "Knowledge Base"
+msgstr ""
+
+#: visual-composer/elements/n2go-blog-post-image-and-metadata.php:9
+msgid "N2Go Blog Post Image & Meta"
+msgstr ""
+
+#: visual-composer/elements/n2go-blog-post-image-and-metadata.php:13 /visual-
+#: composer/elements/n2go-breadcrumbs.php:12 /visual-composer/elements/n2go-
+#: bubble.php:11 /visual-composer/elements/n2go-button.php:10 /visual-
+#: composer/elements/n2go-company-type.php:11 /visual-composer/elements/n2go-
+#: embed.php:11 /visual-composer/elements/n2go-features-subnavigation.php:12
+#: visual-composer/elements/n2go-help-link.php:10 /visual-composer/elements/n2go-
+#: idea-link.php:10 /visual-composer/elements/n2go-info-box.php:10 /visual-
+#: composer/elements/n2go-latest-posts-grid.php:10 /visual-composer/elements/n2go-
+#: login-form.php:12 /visual-composer/elements/n2go-page-tab-anchors.php:128
+#: visual-composer/elements/n2go-page-tabs.php:133 /visual-
+#: composer/elements/n2go-registration-form.php:11 /visual-composer/elements/n2go-
+#: search-form.php:12 /visual-composer/elements/n2go-slider.php:132
+msgid "Content"
+msgstr ""
+
+#: visual-composer/elements/n2go-blog-post-image-and-metadata.php:17 /visual-
+#: composer/elements/n2go-breadcrumbs.php:16 /visual-composer/elements/n2go-
+#: bubble.php:98 /visual-composer/elements/n2go-company-type.php:40 /visual-
+#: composer/elements/n2go-embed.php:27 /visual-composer/elements/n2go-features-
+#: subnavigation.php:16 /visual-composer/elements/n2go-help-link.php:26 /visual-
+#: composer/elements/n2go-idea-link.php:26 /visual-composer/elements/n2go-info-
+#: box.php:21 /visual-composer/elements/n2go-latest-posts-grid.php:31 /visual-
+#: composer/elements/n2go-login-form.php:16 /visual-composer/elements/n2go-
+#: registration-form.php:31 /visual-composer/elements/n2go-search-form.php:16
+msgid "Css"
+msgstr ""
+
+#: visual-composer/elements/n2go-blog-post-image-and-metadata.php:20 /visual-
+#: composer/elements/n2go-breadcrumbs.php:19 /visual-composer/elements/n2go-
+#: bubble.php:101 /visual-composer/elements/n2go-company-type.php:43 /visual-
+#: composer/elements/n2go-embed.php:30 /visual-composer/elements/n2go-features-
+#: subnavigation.php:19 /visual-composer/elements/n2go-help-link.php:29 /visual-
+#: composer/elements/n2go-idea-link.php:29 /visual-composer/elements/n2go-info-
+#: box.php:24 /visual-composer/elements/n2go-latest-posts-grid.php:34 /visual-
+#: composer/elements/n2go-login-form.php:19 /visual-composer/elements/n2go-
+#: registration-form.php:34 /visual-composer/elements/n2go-search-form.php:19
+msgid "Design options"
+msgstr ""
+
+#: visual-composer/elements/n2go-breadcrumbs.php:8
+msgid "N2Go Breadcrumbs"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:8
+msgid "N2Go Bubble"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:17 /visual-composer/elements/n2go-
+#: help-link.php:20 /visual-composer/elements/n2go-idea-link.php:20 /visual-
+#: composer/elements/n2go-info-box.php:15
+msgid "Text"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:20
+msgid "Enter your content."
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:24 /visual-composer/elements/n2go-
+#: company-type.php:21
+msgid "Link"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:30 /visual-composer/elements/n2go-
+#: company-type.php:27
+msgid "Image/Icon"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:33
+msgid "AB Split"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:34
+msgid "API Documentation"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:35
+msgid "API Implementations"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:36
+msgid "API REST"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:37
+msgid "Attributes"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:38
+msgid "Autoresponder"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:39
+msgid "Blacklist"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:40
+msgid "Bounce Management"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:41
+msgid "Bounces and Unsubscribes"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:42
+msgid "Click Map"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:43
+msgid "Clients"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:44
+msgid "Clustering"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:45
+msgid "Collaborative"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:46
+msgid "Conversion Tracking"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:47
+msgid "CSA"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:48
+msgid "CSCRM"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:49
+msgid "CSS Inliner"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:50
+msgid "Custom Domain"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:51
+msgid "Daily Backups"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:52
+msgid "DDV"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:53
+msgid "Dedicated IPs"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:54
+msgid "DOI"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:55
+msgid "Duplicates"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:56
+msgid "Editor"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:57
+msgid "Export"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:58
+msgid "For Free"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:59
+msgid "Free Support"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:60
+msgid "Full Service"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:61
+msgid "Geo Tracking"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:62
+msgid "Google Analytics"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:63
+msgid "Image Hosting"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:64
+msgid "Image Maps"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:65
+msgid "Import"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:66
+msgid "Inbox Testing"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:67
+msgid "Lifecycle"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:68
+msgid "List Management"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:69
+msgid "List Segmentation"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:70
+msgid "Magento"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:71
+msgid "Open and Click"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:72
+msgid "Pay on Demand"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:73
+msgid "Personalized"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:74
+msgid "Plenty Markets"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:75
+msgid "Prices"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:76
+msgid "Privacy Protection"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:77
+msgid "Return Path"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:78
+msgid "SAAS"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:79
+msgid "Safe Addresses"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:80
+msgid "Schedule"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:81
+msgid "Server"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:82
+msgid "SMS"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:83
+msgid "SMS from Address"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:84
+msgid "SMS Scheduled"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:85
+msgid "SMS World Wide"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:86
+msgid "SSL"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:87
+msgid "Template Programming"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:88
+msgid "Templates"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:89
+msgid "Text Version"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:90
+msgid "Thresholds"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:91
+msgid "Unsubscribes"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:92
+msgid "Web Version"
+msgstr ""
+
+#: visual-composer/elements/n2go-bubble.php:94
+msgid "Select bubble image/icon."
+msgstr ""
+
+#: visual-composer/elements/n2go-button.php:7
+msgid "N2Go Button"
+msgstr ""
+
+#: visual-composer/elements/n2go-button.php:11
+msgid "Eye catching button"
+msgstr ""
+
+#: visual-composer/elements/n2go-button.php:15 /visual-composer/elements/n2go-
+#: help-link.php:14 /visual-composer/elements/n2go-idea-link.php:14 /visual-
+#: composer/elements/n2go-page-tab-anchors.php:167
+msgid "URL (Link)"
+msgstr ""
+
+#: visual-composer/elements/n2go-button.php:17 /visual-composer/elements/n2go-
+#: help-link.php:16 /visual-composer/elements/n2go-idea-link.php:16
+msgid "Button link."
+msgstr ""
+
+#: visual-composer/elements/n2go-button.php:21 /visual-composer/elements/n2go-
+#: button.php:25
+msgid "Text on the button"
+msgstr ""
+
+#: visual-composer/elements/n2go-button.php:26
+msgid "Text on the button."
+msgstr ""
+
+#: visual-composer/elements/n2go-button.php:30
+msgid "Color"
+msgstr ""
+
+#: visual-composer/elements/n2go-button.php:33
+msgid "Orange"
+msgstr ""
+
+#: visual-composer/elements/n2go-button.php:34
+msgid "Grey"
+msgstr ""
+
+#: visual-composer/elements/n2go-button.php:36
+msgid "Button color."
+msgstr ""
+
+#: visual-composer/elements/n2go-button.php:41
+msgid "Size"
+msgstr ""
+
+#: visual-composer/elements/n2go-button.php:44 /visual-composer/elements/n2go-
+#: registration-form.php:18
+msgid "Default"
+msgstr ""
+
+#: visual-composer/elements/n2go-button.php:45
+msgid "Small"
+msgstr ""
+
+#: visual-composer/elements/n2go-button.php:48
+msgid "Button size."
+msgstr ""
+
+#: visual-composer/elements/n2go-company-type.php:8
+msgid "N2Go Company Type"
+msgstr ""
+
+#: visual-composer/elements/n2go-company-type.php:15 /visual-
+#: composer/elements/n2go-page-tab-anchors.php:161 /visual-composer/elements/n2go-
+#: page-tabs.php:166 /visual-composer/elements/n2go-slider.php:181
+msgid "Title"
+msgstr ""
+
+#: visual-composer/elements/n2go-company-type.php:17
+msgid "Text below the icon."
+msgstr ""
+
+#: visual-composer/elements/n2go-company-type.php:30
+msgid "E-Commerce"
+msgstr ""
+
+#: visual-composer/elements/n2go-company-type.php:31
+msgid "KMU"
+msgstr ""
+
+#: visual-composer/elements/n2go-company-type.php:32
+msgid "Agency"
+msgstr ""
+
+#: visual-composer/elements/n2go-company-type.php:33
+msgid "NGO"
+msgstr ""
+
+#: visual-composer/elements/n2go-company-type.php:34
+msgid "Big Firm"
+msgstr ""
+
+#: visual-composer/elements/n2go-company-type.php:36
+msgid "Select company type image/icon."
+msgstr ""
+
+#: visual-composer/elements/n2go-embed.php:8
+msgid "N2Go Embed"
+msgstr ""
+
+#: visual-composer/elements/n2go-embed.php:15
+msgid "Embed HTML"
+msgstr ""
+
+#: visual-composer/elements/n2go-embed.php:20
+msgid "Display in computer screen?"
+msgstr ""
+
+#: visual-composer/elements/n2go-embed.php:22
+msgid "If selected, the embedded video will be displayed within a computer screen."
+msgstr ""
+
+#: visual-composer/elements/n2go-embed.php:23
+msgid "Yes, please"
+msgstr ""
+
+#: visual-composer/elements/n2go-features-subnavigation.php:8
+msgid "N2Go Features Subnavigation"
+msgstr ""
+
+#: visual-composer/elements/n2go-help-link.php:7
+msgid "N2Go Help Link"
+msgstr ""
+
+#: visual-composer/elements/n2go-help-link.php:22 /visual-composer/elements/n2go-
+#: idea-link.php:22
+msgid "Text next to the help icon."
+msgstr ""
+
+#: visual-composer/elements/n2go-idea-link.php:7
+msgid "N2Go Idea Link"
+msgstr ""
+
+#: visual-composer/elements/n2go-info-box.php:7
+msgid "N2Go Info Box"
+msgstr ""
+
+#: visual-composer/elements/n2go-info-box.php:17
+msgid ""
+"<p>I am text block. Click edit button to change this text. Lorem ipsum dolor "
+"sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec "
+"ullamcorper mattis, pulvinar dapibus leo.</p>"
+msgstr ""
+
+#: visual-composer/elements/n2go-latest-posts-grid.php:7
+msgid "N2Go Latest Posts Grid"
+msgstr ""
+
+#: visual-composer/elements/n2go-latest-posts-grid.php:14
+msgid "Post Type"
+msgstr ""
+
+#: visual-composer/elements/n2go-latest-posts-grid.php:22
+msgid "Select the type of the posts to display."
+msgstr ""
+
+#: visual-composer/elements/n2go-latest-posts-grid.php:26
+msgid "Number of Posts"
+msgstr ""
+
+#: visual-composer/elements/n2go-login-form.php:8
+msgid "N2Go Login Form"
+msgstr ""
+
+#: visual-composer/elements/n2go-page-tab-anchor.php:2 /visual-
+#: composer/elements/n2go-page-tab.php:2 /visual-composer/elements/n2go-slider-
+#: tab.php:2
+msgid "Tab"
+msgstr ""
+
+#: visual-composer/elements/n2go-page-tab-anchors.php:123
+msgid "N2Go Page Tab Anchors"
+msgstr ""
+
+#: visual-composer/elements/n2go-page-tab-anchors.php:129 /visual-
+#: composer/elements/n2go-page-tabs.php:134 /visual-composer/elements/n2go-slider.
+#: php:133
+msgid "Tabbed content"
+msgstr ""
+
+#: visual-composer/elements/n2go-page-tab-anchors.php:133 /visual-
+#: composer/elements/n2go-page-tabs.php:138 /visual-composer/elements/n2go-slider.
+#: php:153
+msgid "Extra class name"
+msgstr ""
+
+#: visual-composer/elements/n2go-page-tab-anchors.php:135 /visual-
+#: composer/elements/n2go-page-tabs.php:140 /visual-composer/elements/n2go-slider.
+#: php:155
+msgid ""
+"If you wish to style particular content element differently, then use this "
+"field to add a class name and then refer to it in your css file."
+msgstr ""
+
+#: visual-composer/elements/n2go-page-tab-anchors.php:146 /visual-
+#: composer/elements/n2go-page-tabs.php:151 /visual-composer/elements/n2go-slider.
+#: php:166
+msgid "Tab 1"
+msgstr ""
+
+#: visual-composer/elements/n2go-page-tab-anchors.php:147 /visual-
+#: composer/elements/n2go-page-tabs.php:152 /visual-composer/elements/n2go-slider.
+#: php:167
+msgid "Tab 2"
+msgstr ""
+
+#: visual-composer/elements/n2go-page-tab-anchors.php:153
+msgid "N2Go Page Tab Anchor"
+msgstr ""
+
+#: visual-composer/elements/n2go-page-tab-anchors.php:163 /visual-
+#: composer/elements/n2go-page-tabs.php:168 /visual-composer/elements/n2go-slider.
+#: php:183
+msgid "Tab title."
+msgstr ""
+
+#: visual-composer/elements/n2go-page-tab-anchors.php:169
+msgid "Tab link."
+msgstr ""
+
+#: visual-composer/elements/n2go-page-tab-anchors.php:173 /visual-
+#: composer/elements/n2go-page-tabs.php:172 /visual-composer/elements/n2go-slider.
+#: php:200
+msgid "Tab ID"
+msgstr ""
+
+#: visual-composer/elements/n2go-page-tabs.php:128
+msgid "N2Go Page Tabs"
+msgstr ""
+
+#: visual-composer/elements/n2go-page-tabs.php:158
+msgid "N2Go Page Tab"
+msgstr ""
+
+#: visual-composer/elements/n2go-registration-form.php:8
+msgid "N2Go Registration Form"
+msgstr ""
+
+#: visual-composer/elements/n2go-registration-form.php:15
+msgid "Layout"
+msgstr ""
+
+#: visual-composer/elements/n2go-registration-form.php:19
+msgid "Minimal"
+msgstr ""
+
+#: visual-composer/elements/n2go-registration-form.php:21
+msgid "Select a form layout."
+msgstr ""
+
+#: visual-composer/elements/n2go-registration-form.php:25
+msgid "Button Title (Override)"
+msgstr ""
+
+#: visual-composer/elements/n2go-registration-form.php:27
+msgid "Overrides the default button title."
+msgstr ""
+
+#: visual-composer/elements/n2go-search-form.php:8
+msgid "N2Go Search Form"
+msgstr ""
+
+#: visual-composer/elements/n2go-slider.php:127
+msgid "N2Go Slider"
+msgstr ""
+
+#: visual-composer/elements/n2go-slider.php:137
+msgid "Height"
+msgstr ""
+
+#: visual-composer/elements/n2go-slider.php:141
+msgid "Enter the height for the slider."
+msgstr ""
+
+#: visual-composer/elements/n2go-slider.php:145
+msgid "Auto rotate tabs"
+msgstr ""
+
+#: visual-composer/elements/n2go-slider.php:147
+msgid "Disable"
+msgstr ""
+
+#: visual-composer/elements/n2go-slider.php:149
+msgid "Auto rotate tabs each X seconds."
+msgstr ""
+
+#: visual-composer/elements/n2go-slider.php:173
+msgid "N2Go Slider Tab"
+msgstr ""
+
+#: visual-composer/elements/n2go-slider.php:187
+msgid "Background Image"
+msgstr ""
+
+#: visual-composer/elements/n2go-slider.php:190
+msgid "Select image from media library."
+msgstr ""
+
+#: visual-composer/elements/n2go-slider.php:194
+msgid "Background Color"
+msgstr ""
+
+#: visual-composer/elements/n2go-slider.php:196
+msgid "Set custom background color for this tab."
+msgstr ""
+
+#: visual-composer/templates/n2go_page_tab.php:9
+msgid "Empty tab. Edit page to add content here."
+msgstr ""
+
+#: visual-composer/templates/n2go_page_tab_anchors.php:47 /visual-
+#: composer/templates/n2go_page_tab_anchors.php:47 /visual-
+#: composer/templates/n2go_page_tabs.php:43 /visual-
+#: composer/templates/n2go_page_tabs.php:43 /visual-
+#: composer/templates/n2go_slider.php:50 /visual-composer/templates/n2go_slider.
+#: php:50
+msgid "Previous tab"
+msgstr ""
+
+#: visual-composer/templates/n2go_page_tab_anchors.php:47 /visual-
+#: composer/templates/n2go_page_tab_anchors.php:47 /visual-
+#: composer/templates/n2go_page_tabs.php:43 /visual-
+#: composer/templates/n2go_page_tabs.php:43 /visual-
+#: composer/templates/n2go_slider.php:50 /visual-composer/templates/n2go_slider.
+#: php:50
+msgid "Next tab"
+msgstr ""
+
+#. Name of the theme
+msgid "Newsletter2Go 2014"
+msgstr ""
+
+#. Author of the theme
+msgid "SliceMeNice"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://www.slicemenice.de/"
+msgstr ""
+
+#: search-help-topics.php:58 /search.php:47
+msgctxt "search results - no results for search term (%1$s)"
+msgid "No matches found. <br>Please contact our support team."
+msgstr "Nessun risultato trovato.<br>Contatta il nostro servizio di assistenza. "
+
+#: single-help_topic.php:29
+#, php-format
+msgctxt "help topics - back to parent (%1$s) link label"
+msgid "Back to '%1$s'"
+msgstr "Torna a '%1$s'"
+
+#: partials/shareButtons.php:24
+msgctxt "share button"
+msgid "mail"
+msgstr "Inoltra per email"
+
+#: partials/topHeader-default.php:17
+msgctxt "header - ekomi"
+msgid "Ekomi Gold Seal"
+msgstr "Sigillo d'oro eKomi"
+
+#: comments.php:92
+#, php-format
+msgctxt "single post - comments section headline"
+msgid "%1$s Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] "%1$s commento"
+msgstr[1] "%1$s commenti"
+
+#: header.php:119
+msgctxt "newsletter form - server error"
+msgid "An error occurred."
+msgstr "Si è verificato un errore."
+
+#: header.php:120
+msgctxt "registration form - already subscribed error"
+msgid "You have already subscribed to our newsletter."
+msgstr "Ti sei già iscritto alla nostra newsletter."
+
+#: header.php:121
+msgctxt "registration form - invalid email / missing data error"
+msgid "Please enter a valid email address."
+msgstr "Inserisci un indirizzo email valido."
+
+#: header.php:122
+msgctxt "registration form - success message"
+msgid "Thanks for subscribing to our newsletter!"
+msgstr "Grazie per aver sottoscritto la nostra newsletter!"
+
+#: header.php:127
+msgctxt "registration form - server error"
+msgid "An error occurred."
+msgstr "Si è verificato un errore."
+
+#: header.php:128
+msgctxt "registration form - invalid email address"
+msgid "Email address is invalid."
+msgstr "Indirizzo email non valido."
+
+#: header.php:129
+msgctxt "registration form - email already exists"
+msgid "Email address already exists."
+msgstr "L'indirizzo email già in uso."
+
+#: header.php:130
+#, php-format
+msgctxt "registration form - force company email"
+msgid ""
+"Please use the company email address that corresponds to your website, "
+"<u>not</u> %s, if possible."
+msgstr "Usa l'indirizzo email presente sul tuo sito, non % se possibile."
+
+#: header.php:131
+msgctxt "registration form - insecure password"
+msgid "Password is too simple."
+msgstr "Password troppo semplice."
+
+#: header.php:132
+msgctxt "registration form - password mismatch"
+msgid "Passwords do not match."
+msgstr "Le password non corrispondono."
+
+#: header.php:133
+msgctxt "registration form - must accept our terms and conditions error"
+msgid "Please accept our General Terms and Conditions."
+msgstr "Accetta i termini e le condizioni."
+
+#: header.php:138
+msgctxt "reset password form - headline"
+msgid "Reset Password"
+msgstr "Reimpostare la password"
+
+#: header.php:139
+msgctxt "reset password form - description"
+msgid ""
+"For safety reasons we save your password in encrypted form and therefore "
+"cannot send it to you in an email. To obtain a new password enter your email "
+"address below. We will send you an email detailing what to do next."
+msgstr ""
+"Per motivi di sicurezza salviamo la tua password in modo cifrato e non "
+"possiamo inviartela per email. Per richiedere una nuova password inserisci "
+"il tuo indirizzo email di sotto. Ti invieremo un'email per dirti come "
+"procedere. "
+
+#: header.php:140
+msgctxt "reset password form - label for email input field"
+msgid "Email"
+msgstr "email"
+
+#: header.php:141
+msgctxt "reset password form - label for request new password button"
+msgid "Request new password"
+msgstr "Richiedi nuova password"
+
+#: header.php:142
+msgctxt "reset password form - label for cancel button"
+msgid "Cancel"
+msgstr "annulla"
+
+#: header.php:143
+msgctxt "reset password form - form action"
+msgid "https://app.newsletter2go.com/en/user/index/resetpasswordrequest"
+msgstr "https://app.newsletter2go.com/it/user/index/resetpasswordrequest"
+
+#: header.php:144
+msgctxt "reset password form - success message"
+msgid "We have sent you an email. Please follow the instructions."
+msgstr "Ti abbiamo inviato un'email. Segui le istruzioni in essa contenute."
+
+#: header.php:145
+msgctxt "reset password form - request limit message"
+msgid "Only one request permitted every 24h."
+msgstr "Puoi inviare una sola richiesta nell'arco di 24 ore. "
+
+#: header.php:146
+msgctxt "reset password form - error message"
+msgid "An error has occurred."
+msgstr "Si è verificato un errore. "
+
+#: header.php:147
+msgctxt "reset password form - email required error message"
+msgid "Please enter email address."
+msgstr "Inserisci l'indirizzo email. "
+
+#: header.php:166 /partials/topHeader-default.php:37
+msgctxt "header - sign up button label"
+msgid "Sign up free"
+msgstr "Prova ora"
+
+#: header.php:167 /partials/topHeader-default.php:38
+msgctxt "header - log in button label"
+msgid "Log in"
+msgstr "Login"
+
+#: search-help-topics.php:18
+msgctxt "help topics - search results headline"
+msgid "Search results"
+msgstr "Risultati della ricerca"
+
+#: search-help-topics.php:24 /single-help_topic.php:73 /taxonomy-
+#: help_topic_category.php:29 /page-templates/template-helpTopicsOverview.php:23
+#: partials/archive-start.php:30 /partials/archive-start.php:44
+msgctxt "common search input placeholder"
+msgid "Enter your search term"
+msgstr "Immetti qui il termine di ricerca"
+
+#: search-help-topics.php:39
+#, php-format
+msgctxt "help topics - number of results (%1$s) for search term (%2$s)"
+msgid "Search term: '%2$s'"
+msgid_plural "Search term: '%2$s'"
+msgstr[0] "Termine di ricerca: '%2$s'"
+msgstr[1] "Termine di ricerca: '%2$s'"
+
+#: search.php:20
+msgctxt "search results - headline"
+msgid "Knowledge Base"
+msgstr "Nozioni di base"
+
+#: search.php:23
+msgctxt "search results - search field input placeholder"
+msgid "Enter your search term"
+msgstr "Immetti il termine di ricerca"
+
+#: search.php:42
+#, php-format
+msgctxt "search results - number of results (%1$s) for search term (%2$s)"
+msgid "We've found %1$d result for the term '%2$s'"
+msgid_plural "We've found %1$s results for the term '%2$s'"
+msgstr[0] "%1$d risultati trovati per il termine '%2$s'"
+msgstr[1] "%1$d risultati trovati per il termine '%2$s'"
+
+#: single-help_topic.php:99
+#, php-format
+msgctxt "help topics - other questions for this topic (%1$s)"
+msgid "Other questions about %1$s"
+msgstr "Altre domande sull'argomento %1$s"
+
+#: taxonomy-help_topic_category.php:17
+msgctxt "help topics - back to overview page link label"
+msgid "Back to overview"
+msgstr "Torna al riepilogo"
+
+#: yarpp-template-n2go.php:9
+msgctxt "single post - related articles headline"
+msgid "Related Articles"
+msgstr "Articoli correlati"
+
+#: partials/archive-start.php:27
+msgctxt "blog / knowledge base headline"
+msgid "Email Marketing Blog"
+msgstr "Blog sull'email marketing"
+
+#: partials/shareButtons.php:3 /partials/shareButtons.php:17
+msgctxt "share button"
+msgid "share"
+msgstr "condividi"
+
+#: partials/shareButtons.php:7 /partials/shareButtons.php:21
+#, php-format
+msgctxt "share button - with count"
+msgid "%s share"
+msgid_plural "%s shares"
+msgstr[0] "%s condivisione"
+msgstr[1] "%s condivisioni"
+
+#: partials/shareButtons.php:10
+msgctxt "share button"
+msgid "tweet"
+msgstr "tweet"
+
+#: partials/teaser.php:113
+msgctxt "post teaser - read more button label"
+msgid "Read more"
+msgstr "continua a leggere"
+
+#: partials/teaser.php:138
+#, php-format
+msgctxt "post teaser - comments / share activity count"
+msgid "%s Comment"
+msgid_plural "%s Comments"
+msgstr[0] "%s commento"
+msgstr[1] "%s commenti"
+
+#: partials/topHeader-default.php:18
+msgctxt "header - support info"
+msgid "Support Hotline<br>(858) 365-0860"
+msgstr "Assistenza telefonica <br>+39 06 9480 1620"
+
+#: visual-composer/templates/n2go_login_form.php:11
+msgctxt "login form - headline"
+msgid "Login"
+msgstr "Login"
+
+#: visual-composer/templates/n2go_login_form.php:13
+msgctxt "login form - login failed error"
+msgid "Login failed. Please check your login details."
+msgstr "Login non riuscito. Controlla i dati immessi."
+
+#: visual-composer/templates/n2go_login_form.php:14
+msgctxt "login form - label for email input"
+msgid "Email"
+msgstr "Email"
+
+#: visual-composer/templates/n2go_login_form.php:16
+msgctxt "login form - label for password input"
+msgid "Password"
+msgstr "Password"
+
+#: visual-composer/templates/n2go_login_form.php:18
+msgctxt "login form - label for stay-logged-in checkbox"
+msgid "log me in automatically in future"
+msgstr "Ricorda la password"
+
+#: visual-composer/templates/n2go_login_form.php:19
+msgctxt "login form - label for submit button"
+msgid "Log in"
+msgstr "Login"
+
+#: visual-composer/templates/n2go_login_form.php:23
+msgctxt "login form - label for forgot-password button"
+msgid "Forgot password?"
+msgstr "Hai dimenticato la password?"
+
+#: visual-composer/templates/n2go_login_form.php:24
+msgctxt "login form - label for sign-up button"
+msgid "No account yet?"
+msgstr "Non hai ancora un account?"
+
+#: visual-composer/templates/n2go_registration_form.php:11
+msgctxt "registration form - label for terms and conditions checkbox"
+msgid ""
+"I accept the <a href=\"/general-terms-and-conditions/\" "
+"target=\"_blank\">General Terms and Conditions.</a>"
+msgstr ""
+"Accetto  <a href=\"/termini-e-condizioni/\" target=\"_blank\">i termini e le "
+"condizioni.</a>"
+
+#: visual-composer/templates/n2go_registration_form.php:27
+msgctxt "registration form - label for submit button"
+msgid "Register for free"
+msgstr "Registrati gratuitamente"
+
+#: visual-composer/templates/n2go_registration_form.php:33
+msgctxt "registration form - headline"
+msgid "Register free <br>and test now."
+msgstr "Registrati gratuitamente e fai ora un test."
+
+#: visual-composer/templates/n2go_registration_form.php:41 /visual-
+#: composer/templates/n2go_registration_form.php:47
+msgctxt "registration form - label for email input"
+msgid "Email:"
+msgstr "Email:"
+
+#: visual-composer/templates/n2go_registration_form.php:55 /visual-
+#: composer/templates/n2go_registration_form.php:61
+msgctxt "registration form - label for password input"
+msgid "Password:"
+msgstr "Password:"
+
+#: visual-composer/templates/n2go_registration_form.php:69 /visual-
+#: composer/templates/n2go_registration_form.php:75
+msgctxt "registration form - label for password confirmation input"
+msgid "Repeat password:"
+msgstr "Ripeti la password:"
+
+#: visual-composer/templates/n2go_registration_form.php:94
+msgctxt "registration form - additional text"
+msgid ""
+"Do you have a question? Contact us now:<br><b>Free&nbsp;Hotline: (858) 365 "
+"0860&nbsp;</b>"
+msgstr ""
+"Hai domande? Contatta ora il nostro<br><b> servizio&nbsp;assistenza al "
+"numero: +39 06 9480 1620&nbsp;</b>"
+
+#: visual-composer/templates/n2go_search_form.php:11
+msgctxt "search form - search field input placeholder"
+msgid "Enter your search term"
+msgstr "Immetti il termine di ricerca"

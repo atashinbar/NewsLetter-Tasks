@@ -1,0 +1,37 @@
+.#{$projectPrefix}css .#{$projectPrefix}companyType {
+	@include transition( all 0.2s ease-in );
+	color: #404040;
+	cursor: pointer;
+	display: block;
+	font-size: 1.6rem;
+	font-weight: 400;
+	padding: 0.8rem;
+	text-align: center;
+	width: 100%;
+
+	&:hover {
+		@include border-radius( 2px );
+		background-color: #ededed;
+		color: #404040;
+	}
+}
+
+.#{$projectPrefix}companyType_icon {
+	@include transition( all 300ms );
+	display: block;
+	margin: 0 auto;
+}
+
+.#{$projectPrefix}companyType_content {
+	padding-top: 1.3rem;
+}
+
+$companyTypeIcons: ecommerce kmu agency ngo bigfirm;
+
+@each $icon in $companyTypeIcons {
+	.#{$projectPrefix}companyType-#{$icon} {
+		.#{$projectPrefix}companyType_icon {
+			@include background-sprite( 'companyType-#{$icon}' );
+		}
+	}
+}

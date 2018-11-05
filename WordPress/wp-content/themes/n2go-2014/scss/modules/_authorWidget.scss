@@ -1,0 +1,29 @@
+.#{$projectPrefix}authorWidget {
+	@include clearfix;
+}
+
+.#{$projectPrefix}authorWidget_left {
+	float: left;
+	padding: 0 1.5rem 1rem 0;
+	width: 7.9rem;
+
+	img {
+		@include border-radius( 50% );
+		@include box-shadow( 0 2px 6px rgba( 0, 0, 0, 0.2 ) );
+		@include clearfix;
+		display: inline-block;
+		height: 6.4rem;
+		width: 6.4rem;
+		vertical-align: middle;
+	}
+}
+
+.#{$projectPrefix}authorWidget_name {
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+
+.#{$projectPrefix}authorWidget_description {
+	font-size: 1.4rem;
+	line-height: normal;
+}

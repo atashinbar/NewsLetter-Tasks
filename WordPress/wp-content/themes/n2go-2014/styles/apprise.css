@@ -1,0 +1,33 @@
+.appriseOverlay
+	{
+	position:fixed;
+	top:0;
+	left:0;
+	background: url(../images/black30.png) repeat;
+	display:none;
+	z-index:5000;
+	height:100%;
+	width:100%;
+	}
+.appriseOuter
+	{
+	position:fixed;
+	z-index:5001;
+	display:none;
+	left:50%;
+	}
+.appriseInner
+	{
+	background: #ffffff;
+	border:1px solid #fff;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	-khtml-border-radius:4px;		
+	padding:20px;
+	color:#000;
+	text-align:center;
+	position:relative;
+	left:-50%;
+	margin-top: -25%;
+}

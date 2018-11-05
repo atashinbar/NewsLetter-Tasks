@@ -1,0 +1,37 @@
+.#{$projectPrefix}offCanvasNavigation {
+	background: darken( #f4f7f9, 6% );
+	color: #5f666b;
+}
+
+.#{$projectPrefix}offCanvasNavigation_panel {
+	background: #f4f7f9;
+	border-top: 1px solid lighten( #f4f7f9, 1% );
+	border-bottom: 1px solid darken( #f4f7f9, 12% );
+	padding: 1.5rem 2rem;
+}
+
+.#{$projectPrefix}offCanvasNavigation_list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+		background: #f4f7f9;
+		border-top: 1px solid lighten( #f4f7f9, 1% );
+		border-bottom: 1px solid darken( #f4f7f9, 12% );
+
+		&.active {
+			color: #00a7e6;
+		}
+	}
+
+	a {
+		color: inherit;
+		display: block;
+		padding: 1.5rem 2rem;
+
+		&:hover {
+			color: inherit;
+		}
+	}
+}

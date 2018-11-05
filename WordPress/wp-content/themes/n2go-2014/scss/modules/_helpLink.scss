@@ -1,0 +1,19 @@
+.#{$projectPrefix}css .#{$projectPrefix}helpLink {
+	color: #1cbaff;
+	display: block;
+	padding: 1px 0 0 2.8rem;
+	position: relative;
+
+	&:hover,
+	&:active {
+		color: #1cbaff;
+	}
+
+	&:before {
+		@include background-sprite( 'icon-help' );
+		content: '';
+		left: 0;
+		position: absolute;
+		top: 0;
+	}
+}

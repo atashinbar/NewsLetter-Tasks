@@ -1,0 +1,19 @@
+.#{$projectPrefix}css .#{$projectPrefix}ideaLink {
+	color: #f96f00;
+	display: block;
+	padding: 0.8rem 0 0 3.2rem;
+	position: relative;
+
+	&:hover,
+	&:active {
+		color: #f96f00;
+	}
+
+	&:before {
+		@include background-sprite( 'icon-idea' );
+		content: '';
+		left: 0;
+		position: absolute;
+		top: 0;
+	}
+}

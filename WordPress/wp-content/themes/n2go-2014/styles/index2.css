@@ -1,0 +1,228 @@
+@charset "utf-8";
+#content{
+	/*padding-bottom: 80px !important;*/
+}
+#slides{
+	width: 100%;
+	height: 370px;
+	position: relative;
+}
+.slide{
+	height: 370px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	display: none;
+	background-color: #deeefe;
+}
+.slide.active{
+	display: block;
+}
+.slide[data-slide-id="1"]{
+	background-image: url(../images/start/teaser1.jpg);
+	background-color: #ffffff;
+}
+.slide[data-slide-id="2"]{
+	background-image: url(../images/start/teaser2.jpg);
+}
+.slide[data-slide-id="3"]{
+	background-image: url(../images/start/teaser3.jpg);
+	background-color: #ffffff;
+}
+.slide[data-slide-id="4"]{
+	background-image: url(../images/start/teaser4.jpg);
+}
+.slide[data-slide-id="5"]{
+	background-image: url(../images/start/teaser5.jpg);
+	color: #ffffff !important;
+}
+.slide[data-slide-id="6"]{
+	background-image: url(../images/start/teaser6.jpg);
+}
+.slide[data-slide-id="7"]{
+	background-image: url(../images/start/teaser7.jpg);
+}
+.slide .content{
+	margin: auto;
+	text-align: left;
+	width: 1050px;
+}
+.slide .content .topic{
+	font-size: 34px;
+	line-height: 42px;
+	padding-top: 32px;
+	padding-bottom: 20px;
+	width: 800px;
+	font-family: "Open Sans Smooth";
+}
+.slide .content .text{
+	width: 600px;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+#tags{
+	width: 100%;
+	background-color: rgba(237,237,237,0.9);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 10000;
+}
+#progress{
+	height: 0px;
+	position: relative;
+	width: 1050px;
+}
+.progressbar{
+	width: 0px;
+	height: 38px;
+	background-color: rgba(255,255,255,0.3);
+	position: absolute;
+	left: 0;
+}
+.tag{
+	display: inline-block;
+	padding: 10px 0 10px 0;
+	width: 150px;
+	transition: all 200ms ease-in; 
+	font-weight: 400;
+}
+.tag.active{
+	background-color: #47a1ff;
+	color: #ffffff;
+	transition: all 200ms ease-in; 
+}
+.tag:hover{
+	background-color: rgba(0,0,0,0.05);
+	transition: all 200ms ease-in; 
+	cursor: pointer;
+}
+.tag.active:hover{
+	cursor: default;
+	background-color: #47a1ff;
+}
+.main{
+	padding: 48px 0;
+}
+.main .topic, .main h1{
+	font-weight: 300;
+	font-size: 34px;
+	color: #1b4b60;
+	font-size: 34px;
+	font-family: "Open Sans Smooth";
+	display: inline;
+	line-height: 40px;
+	padding: 0;
+	margin: 0;
+}
+.main h1{
+	font-weight: 400;
+}
+.main p{
+	padding: 12px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+.companytype{
+	display: inline-block;
+	padding: 72px 8px 8px 8px;
+	width: 194px;
+	cursor: pointer;
+	color: inherit;
+	transition: all 200ms ease-in;
+}
+.companytype:hover{
+	background-color: #ededed;
+	border-radius: 2px;
+	color: inherit;
+	transition: all 200ms ease-in; 
+}
+.companytype.agency{
+	background-image: url(../images/start/agentur.png);
+	background-position: center 8px;
+	background-repeat: no-repeat;	
+}
+.companytype.ecommerce{
+	background-image: url(../images/start/ecommerce.png);
+	background-position: center 8px;
+	background-repeat: no-repeat;	
+}
+.companytype.ag{
+	background-image: url(../images/start/grossunternehmen.png);
+	background-position: center 8px;
+	background-repeat: no-repeat;	
+}
+.companytype.kmu{
+	background-image: url(../images/start/kmu.png);
+	background-position: center 8px;
+	background-repeat: no-repeat;	
+}
+.companytype.ngo{
+	background-image: url(../images/start/vereine-ngo.png);
+	background-position: center 8px;
+	background-repeat: no-repeat;	
+}
+.companytype .desc{
+	font-size: 16px;
+	font-weight: 400;
+}
+.trust{
+	padding: 16px 0 32px;
+	background-color: #f8f8f8;
+}
+.trust .topic{
+	font-size: 24px;
+	line-height: 24px;
+	font-family: "Open Sans Smooth";
+	margin-bottom: 16px;
+}
+.trust .left, .trust .right{
+	display: inline-block;
+	width: 525px;
+	text-align: center;
+	vertical-align: top;
+}
+.teaser-left{
+	display: inline-block;
+	width: 500px;
+	margin-right: 25px;
+	vertical-align: middle;
+	text-align: left;
+	padding: 32px 0;
+	font-weight: 400;
+	line-height: 20px;
+}
+.teaser-right{
+	display: inline-block;
+	width: 500px;
+	margin-left: 25px;
+	vertical-align: middle;
+	text-align: left;
+	padding: 32px 0;
+	font-weight: 400;
+	line-height: 20px;
+}
+.teaser-right.img{
+	text-align: right;
+}
+.teaser-left h2, .teaser-right h2{
+	font-weight: 600;
+	color: #1b4b60;
+	font-size: 20px;
+	line-height: 28px;
+	padding-bottom: 8px;
+}
+#eKomiWidget_default{
+	display: inline-block;
+}
+#experience{
+	margin-right: 90px;
+}
+.hreview-aggregate {
+    display: inline-block;
+    padding-bottom: 32px;
+    padding-left: 8px;
+    font-size: 20px;
+    vertical-align: text-top;
+}

@@ -1,0 +1,25 @@
+.#{$projectPrefix}css .#{$projectPrefix}companyTypes {
+	.wpb_column {
+		float: left;
+	}
+}
+
+@media ( max-width: 889px ) {
+	.#{$projectPrefix}css .#{$projectPrefix}companyTypes {
+		text-align: center;
+
+		.wpb_column {
+			width: 33.33%;
+		}
+	}
+}
+
+@media ( max-width: 569px ) {
+	.#{$projectPrefix}css .#{$projectPrefix}companyTypes {
+		text-align: center;
+
+		.wpb_column {
+			width: 50%;
+		}
+	}
+}

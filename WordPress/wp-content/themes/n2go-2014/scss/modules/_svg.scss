@@ -1,0 +1,15 @@
+.#{$projectPrefix}svg {
+	height: 100%;
+}
+
+.#{$projectPrefix}svg_content {
+	font-size: 0;
+	height: 100%;
+	width: 100%;
+
+	svg
+	{
+		height: 100%;
+		width: 100%;
+	}
+}

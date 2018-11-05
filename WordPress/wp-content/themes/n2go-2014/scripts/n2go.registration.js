@@ -1,0 +1,301 @@
+(function ( $ )
+{
+	$(document).ready(function() {
+		var $registrationForm = $( '.n2go-registrationForm' ).not( '.n2go-registrationForm-minimal' );
+		var $registrationFormWrapper = $registrationForm.closest( '.wpb_row' );
+
+		if ( $registrationForm.length ) {
+			var timer;
+
+			var eventHandler = function () {
+				clearTimeout( timer );
+				timer = setTimeout( refresh, 150 );
+			};
+
+			$( window ).on( 'scroll', eventHandler );
+			$( window ).on( 'resize', eventHandler );
+		}
+
+		function refresh() {
+			var registrationFormRect = $registrationForm[0].getBoundingClientRect();
+			var registrationFormWrapperRect = $registrationFormWrapper[0].getBoundingClientRect();
+
+			if ( window.innerWidth < 768 ) {
+				$registrationForm.css( { 'marginTop': '' } );
+				return;
+			}
+
+			if ( registrationFormRect.bottom <= registrationFormWrapperRect.bottom ) {
+				var top = ($( document ).scrollTop() + $registrationForm.outerHeight()) >= $registrationFormWrapper.outerHeight() ? ($registrationFormWrapper.outerHeight() - $registrationForm.outerHeight()) : $( document ).scrollTop();
+				$registrationForm.animate( {'marginTop' : top}, 300 );
+			}
+		}
+	});
+
+})( jQuery );
+
+(function ( $ )
+{
+	var apiUrl = 'https://api.newsletter2go.com/';
+	var frontendUrl = 'https://ui.newsletter2go.com/index.php';
+
+	function endsWith( str, suffix )
+	{
+		return str.indexOf( suffix, str.length - suffix.length ) !== -1;
+	}
+
+	function isValidEmailAddress( emailAddress )
+	{
+		var pattern = new RegExp( /[A-Z0-9._%+-]+@[A-Z0-9._%+-]+\.[A-Z0-9._%+-]+/i );
+		return pattern.test( emailAddress );
+	}
+
+	function isValidPw( pw )
+	{
+		var pw = $( '#registerForm #password' ).val();
+
+		re = /[0-9]/;
+		if(!re.test(pw)) {
+			return false;
+		}
+		re = /[a-z]/;
+		if(!re.test(pw)) {
+			return false;
+		}
+
+		return pw.length > 7;
+	}
+
+	function isValidPwReply( pw, pwReply )
+	{
+		var pw = $( '#registerForm #password' ).val();
+		var pwReply = $( '#registerForm #password_reply' ).val();
+
+		return pw === pwReply;
+	}
+
+	$( document ).ready( function ()
+	{
+		if ( typeof  WordPress.RegistrationForm === 'string' )
+		{
+			var WordPressRegistrationFormString = WordPress.RegistrationForm.replace(/&quot;/g, '"');
+			WordPress.RegistrationForm = $.parseJSON(WordPressRegistrationFormString);
+		}
+
+
+		var $registerInput = $( '.registerinput' );
+
+		$registerInput.focus( function ()
+		{
+			$( this ).addClass( 'registerinput_active' ).removeClass( 'registerinput' );
+			this.select();
+		} );
+
+		$registerInput.blur( function ()
+		{
+			$( this ).addClass( 'registerinput' ).removeClass( 'registerinput_active' );
+		} );
+
+		function validateemail()
+		{
+			var email = $( '#mail' ).val();
+			if ( email != '' )
+			{
+				if ( !isValidEmailAddress( email ) )
+				{
+
+					$( '#validEmail' ).html( '<img src="' + WordPress.templateDirectory + '/images/fail.png"/>' );
+				}
+			}
+			else
+			{
+				$( '#validEmail' ).html( '' );
+			}
+			//force user to use his company email
+			var bad_email_domains = new Array( 'gmail.com', 'googlemail.com', 'freenet.de', 'aol.com', 'aol.de', 'aim.com', 'aim.de', 'ok.de', 'arcor.de', 'gmx.de', 'gmx.net', 'web.de', 't-online.de', 'outlook.com', 'yahoo.de', 'yahoo.it', 'yahoo.com', '1und1.de', '1und1.com', 'virgilio.it', 'mail.com', 'email.it', 'libero.it', 'alice.it', 'katamail.com', 'tiscali.it' );
+			$.each( bad_email_domains, function ( index, value )
+			{
+
+				if ( endsWith( email.toLowerCase(), '@' + value ) )
+				{
+					var msg = WordPress.RegistrationForm.messages.ForceCompanyEmail.replace( '%s', value );
+					$.jGrowl( msg );
+					return;
+				}
+			} );
+
+
+		}
+
+		$( '#registerForm #mail' ).blur( function ()
+		{
+			validateemail();
+		} );
+
+		$( '#registerForm #password' ).blur( function ()
+		{
+			var pw = $( '#registerForm #password' ).val();
+			if ( isValidPw( pw ) )
+			{
+				$( '#validPw' ).html( '<img src="' + WordPress.templateDirectory + '/images/success.png" />' );
+
+			}
+			else
+			{
+				$.jGrowl( WordPress.RegistrationForm.messages.InsecurePassword );
+				$( '#validPw' ).html( '<img src="' + WordPress.templateDirectory + '/images/fail.png" />' );
+			}
+		} );
+
+		$( '#registerForm #password_reply' ).blur( function ()
+		{
+			if ( isValidPwReply() )
+			{
+				$( '#validPwReply' ).html( '<img src="' + WordPress.templateDirectory + '/images/success.png" />' );
+			}
+			else
+			{
+				$.jGrowl( WordPress.RegistrationForm.messages.PasswordMismatch );
+				$( '#validPwReply' ).html( '<img src="' + WordPress.templateDirectory + '/images/fail.png" />' );
+			}
+		} );
+
+
+		$('#registerForm .n2go-button').click( function (event) {
+
+
+			var language = WordPress.LoginForm.messages.PasswordFormActionUrl.replace("https://app.newsletter2go.com/", "").replace('/user/index/resetpasswordrequest', '');
+
+
+			var mail = $( '#mail' ).val();
+			var password = $( '#registerForm #password' ).val();
+
+			if ( isValidEmailAddress( mail ) && isValidPw() && isValidPwReply() && $( '#cbterms:checked' ).val() != null )
+			{
+				var errorCallback = function (text) {
+					$.jGrowl( WordPress.RegistrationForm.messages.InvalidEmailAddress );
+				};
+				var successCallback = function(text) {
+
+					// Facebook Tracking
+					if ( window.fbq ) {
+						fbq('track', 'CompleteRegistration');
+					}
+					var date = new Date();
+					var dateString = date.toISOString();
+					window.dataLayer.push({'event': 'gaTriggerEvent','gaEventCategory': 'REGISTRATION_PROCESS','gaEventAction': 'Reg_Sent','gaEventLabel': language + "-" + dateString});
+					loginNewAppWithData(mail, password, errorCallback);
+				};
+				if (language == 'de' || language == 'en' || language == 'uk' || language == 'ca' || language == 'it' || language == 'fr'|| language == 'es'||language == 'nl') {
+					event.preventDefault();
+					doRegister(language, mail, password, successCallback, errorCallback);
+				} else {
+					$( '#registerForm' ).submit();
+				}
+			}
+			else
+			{
+				if ( !isValidEmailAddress( $( '#mail' ).val() ) )
+					$.jGrowl( WordPress.RegistrationForm.messages.InvalidEmailAddress );
+				if ( !isValidPw() )
+					$.jGrowl( WordPress.RegistrationForm.messages.InsecurePassword );
+				if ( !isValidPwReply() )
+					$.jGrowl( WordPress.RegistrationForm.messages.PasswordMismatch );
+				if ( $( '#cbterms:checked' ).val() == null )
+					$.jGrowl( WordPress.RegistrationForm.messages.MustAcceptOurTermsAndConditions );
+				return false;
+			}
+
+
+		});
+
+		$( '#registerForm' ).append( '<input type="hidden" name="captcha" value="123456">' );
+
+	} );
+
+	function readCookie(name) {
+		var nameEQ = encodeURIComponent(name) + "=";
+		var ca = document.cookie.split(';');
+		for (var i = 0; i < ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+			if (c.indexOf(nameEQ) === 0) return decodeURIComponent(c.substring(nameEQ.length, c.length));
+		}
+		return null;
+	}
+
+	function doRegister(language2char, mail, password, successCallback, errorCallback) {
+		switch(language2char) {
+		    case 'en':
+			language = 'en_US';
+			break;
+			case 'fr':
+			language = 'fr_FR';
+			break;
+		    case 'es':
+			language = 'es_ES';
+			break;
+		    case 'br':
+			language = 'en_US';
+			break;
+		    case 'pl':
+			language = 'pl_PL';
+			break;
+		    case 'nl':
+			language = 'nl_NL';
+			break;
+		    case 'it':
+			language = 'it_IT';
+			break;
+		    default:
+			language = 'de_DE';
+			break;
+		}
+		
+		var tld = window.location.host.split(".");
+		tld = tld[tld.length-1];
+
+		var affiliate_code = readCookie('ref');
+
+		$.ajax({ method: 'POST',
+			url: apiUrl + 'users/register',
+			data: JSON.stringify({'user':{'email': mail, 'password': password, 'language': language, 'register_tld': tld}, 'affiliate_code': affiliate_code}),
+			/*beforeSend: function(xhr) {
+			 xhr.setRequestHeader("Authorization", "Basic " + btoa('sg7aa53n_ALsmBR_HH4Fc3_LfrZWGH5_9kU82fkhMvp3' + ":" + '1'));
+			 },*/
+			success: successCallback,
+			error: errorCallback
+		});
+
+	}
+
+	function loginNewAppWithData(username, password, errorCallback) {
+
+		$.ajax({ method: 'POST',
+			url: apiUrl + 'oauth/v2/token',
+			data: {'username': username, 'password': password, 'grant_type':'https://nl2go.com/jwt'},
+			beforeSend: function(xhr) {
+				xhr.setRequestHeader("Authorization", "Basic " + btoa('sg7aa53n_ALsmBR_HH4Fc3_LfrZWGH5_9kU82fkhMvp3' + ":" + '1'));
+			},
+			success: function(text) {
+				var accId = text.account_id;
+				var token = text.access_token;
+
+				var form = $('<form action="' + frontendUrl + '" method="post">' +
+					'<input type="text" name="account_id" value="' + accId + '" />' +
+					'<input type="text" name="token" value="' + token + '" />' +
+					'<input type="text" name="username" value="' + username + '" />' +
+					'</form>');
+				$('body').append(form);
+				form.submit();
+
+				/*
+				 response.data.account_id
+				 localStorage.appUser = {username: 'something', apiToken: 'token', accountId: ''}
+				 */
+			},
+			error: errorCallback
+		});
+	}
+
+})( jQuery );

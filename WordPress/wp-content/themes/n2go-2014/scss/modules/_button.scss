@@ -1,0 +1,104 @@
+.#{$projectPrefix}css .#{$projectPrefix}button
+{
+	-webkit-appearance: none;
+	@include border-radius( 3px );
+	@include transition( all 0.1s ease-in );
+	background: #f96f00;
+	border: 1px solid transparent;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1.25;
+	margin: 0;
+	padding: 0.75em 1.5em 0.65em;
+	text-align: center;
+	vertical-align: middle;
+	width: auto;
+
+	&:hover
+	{
+		background-color: transparent;
+		border-color: #f96f00;
+		color: #f96f00;
+	}
+
+	&.#{$projectPrefix}button-inverted {
+		background-color: transparent;
+		border-color: #f96f00;
+		color: #f96f00;
+		font-weight: 400;
+
+		&:hover {
+			background: #f96f00;
+			border-color: transparent;
+			color: #fff;
+		}
+	}
+}
+
+.#{$projectPrefix}css .#{$projectPrefix}button-grey {
+	background: #a6a6a6;
+
+	&:hover
+	{
+		border-color: #a6a6a6;
+		color: #a6a6a6;
+	}
+
+	&.#{$projectPrefix}button-inverted {
+		background-color: transparent;
+		border-color: #a6a6a6;
+		color: #a6a6a6;
+		font-weight: 400;
+
+		&:hover {
+			background: #a6a6a6;
+			border-color: transparent;
+			color: #fff;
+		}
+	}
+}
+
+.#{$projectPrefix}css .#{$projectPrefix}button-blue {
+	background: #00baff;
+
+	&:hover
+	{
+		border-color: #00baff;
+		color: #00baff;
+	}
+
+	&.#{$projectPrefix}button-inverted {
+		background-color: transparent;
+		border-color: #00baff;
+		color: #00baff;
+		font-weight: 400;
+
+		&:hover {
+			background: #00baff;
+			border-color: transparent;
+			color: #fff;
+		}
+	}
+}
+
+.#{$projectPrefix}css .#{$projectPrefix}button-small {
+	font-size: 1.4rem;
+	padding: 8px 1em 6px;
+}
+
+@media ( max-width: 439px ) {
+	.#{$projectPrefix}css .#{$projectPrefix}button {
+		font-size: 1.4rem;
+	}
+}
+
+@media ( max-width: 767px ) {
+	.#{$projectPrefix}css .#{$projectPrefix}button-showAsDisplayBlockOnSmallDevices {
+		display: block;
+		width: 100%;
+	}
+}
+

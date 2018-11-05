@@ -1,0 +1,37 @@
+.#{$projectPrefix}centeredContent {
+	@include clearfix;
+	margin: 0 auto;
+}
+
+.#{$projectPrefix}centeredContent-page {
+	max-width: 120rem;
+	padding: 0 7.5rem;
+
+	.#{$projectPrefix}centeredContent-page {
+		padding: 0;
+	}
+}
+
+@media ( max-width: 1000px ) {
+	.#{$projectPrefix}centeredContent-page {
+		padding: 0 5rem;
+	}
+}
+
+@media ( max-width: 900px ) {
+	.#{$projectPrefix}centeredContent-page {
+		padding: 0 4rem;
+	}
+}
+
+@media ( max-width: 800px ) {
+	.#{$projectPrefix}centeredContent-page {
+		padding: 0 3rem;
+	}
+}
+
+@media ( max-width: 700px ) {
+	.#{$projectPrefix}centeredContent-page {
+		padding: 0 2rem;
+	}
+}

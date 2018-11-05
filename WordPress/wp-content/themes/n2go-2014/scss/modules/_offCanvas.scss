@@ -1,0 +1,40 @@
+.#{$projectPrefix}offCanvasView {
+	background: #fff;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+
+.#{$projectPrefix}offCanvasView-isFixed {
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.#{$projectPrefix}offCanvasView-isFixed,
+.#{$projectPrefix}offCanvasFixedViewElement-isFixed {
+	overflow: hidden;
+
+	&:before {
+		content: '';
+		height: 9999%;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 999999;
+	}
+}
+
+.#{$projectPrefix}offCanvasView[data-view=main] {
+	@include box-shadow( 0 0 3px rgba( 0, 0, 0, 0.2 ) );
+	padding-top: 7.6rem;
+}
+
+@media ( max-width: 639px ) {
+	.#{$projectPrefix}offCanvasView[data-view=main] {
+		padding-top: 6.7rem;
+	}
+}

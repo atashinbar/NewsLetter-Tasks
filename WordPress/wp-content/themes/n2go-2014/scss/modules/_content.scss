@@ -1,0 +1,177 @@
+.#{$projectPrefix}content {
+	// VisualComposer / N2Go layout styles
+	font-weight: 300;
+
+	.wpb_wrapper {
+		max-width: 105rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	.#{$projectPrefix}headline {
+		color: #5f666b;
+		font-family: 'Proxima Nova';
+		font-weight: 400;
+		line-height: 1.1;
+		margin: 0;
+		text-rendering: optimizelegibility;
+
+		b,
+		strong {
+			font-weight: 500;
+		}
+	}
+
+	h1,
+	.#{$projectPrefix}headline-h1 {
+		font-size: 2.8rem;
+	}
+
+	h2,
+	.#{$projectPrefix}headline-h2 {
+		font-size: 2.4rem;
+	}
+
+	h3,
+	.#{$projectPrefix}headline-h3 {
+		font-size: 2rem;
+	}
+
+
+	.n2go-homeHeading,
+	.n2go-homeHeading p,
+	.n2go-newHomeHeading,
+	.n2go-newHomeHeading p {
+		color: #5f666b;
+		font-family: 'Proxima Nova';
+		font-size: 2.8rem;
+		font-weight: 400;
+		line-height: 1.428;
+	}
+
+	.n2go-homeHeading p {
+		margin-top: 3.8rem;
+	}
+
+	.n2go-newContentText,
+	.n2go-newContentTextWhite {
+		font-size: 15px;
+		line-height: 1.8;
+	}
+
+	.n2go-newContentTextWhite,
+	.n2go-whiteHeading {
+		color: #fff;
+	}
+
+	.n2go-centeredTable {
+		table {
+			margin: 0 auto;
+		}
+	}
+
+	.n2go-textContainingCheckmarkList {
+
+		ul {
+			line-height: 1.5;
+			padding: 0;
+
+			li {
+				list-style: none;
+				min-height: 2.3rem;
+				padding: 0.4rem 0 0 3.6rem;
+				position: relative;
+
+				&:before {
+					@include background-sprite( 'icon-checkmark' );
+					content: '';
+					left: 0;
+					position: absolute;
+					top: 0;
+				}
+			}
+		}
+	}
+}
+
+@media ( min-width: 768px ) {
+	.#{$projectPrefix}content {
+		& > .vc_row {
+			& > .#{$projectPrefix}centeredContent-page {
+				& > .wpb_column:first-child {
+					padding-left: 0;
+				}
+
+				& > .wpb_column:last-child {
+					padding-right: 0;
+				}
+			}
+		}
+	}
+}
+
+@media ( max-width: 669px ) {
+	.#{$projectPrefix}content {
+		.n2go-homeHeading,
+		.n2go-homeHeading p {
+			font-size: 3.4rem;
+		}
+
+		h1 {
+			font-size: 3.4rem;
+		}
+
+		h2 {
+			font-size: 2.2rem;
+		}
+
+		h3 {
+			font-size: 1.6rem;
+		}
+	}
+}
+
+@media ( max-width: 639px ) {
+	.#{$projectPrefix}content {
+		.n2go-homeHeading,
+		.n2go-homeHeading p {
+			font-size: 3rem;
+		}
+
+		h1 {
+			font-size: 3rem;
+		}
+
+		h2 {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+@media ( max-width: 579px ) {
+	.#{$projectPrefix}content {
+		.n2go-homeHeading,
+		.n2go-homeHeading p {
+			font-size: 2.6rem;
+		}
+
+		h1 {
+			font-size: 2.6rem;
+		}
+	}
+}
+
+@media ( max-width: 439px ) {
+	.#{$projectPrefix}content {
+		.n2go-homeHeading,
+		.n2go-homeHeading p {
+			font-size: 2.2rem;
+		}
+	}
+}

@@ -1,0 +1,77 @@
+.#{$projectPrefix}sliderNavigation {
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			@include transition( all 0.2s ease-in );
+			@include user-select(none);
+			cursor: pointer;
+			font-weight: 400;
+			position: relative;
+			width: 15rem;
+
+			.progress {
+				background: rgba( 255, 255, 255, 0.3 );
+				display: none;
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 0%;
+				z-index: 1;
+			}
+
+			a {
+				color: #969da2;
+				display: block;
+				font-size: 1.4rem;
+				padding: 1rem 0 1rem 0;
+				position: relative;
+				z-index: 2;
+
+				&:focus {
+					outline: none !important;
+				}
+
+				&:hover {
+					color: #969da2;
+				}
+			}
+
+			&:hover {
+				background-color: rgba( 0, 0, 0, 0.05 );
+			}
+
+			&.ui-state-active {
+				background: #47a1ff;
+				color: #fff;
+
+				.progress {
+					display: block;
+				}
+
+				a {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+@media ( max-width: 1050px ) {
+	.#{$projectPrefix}sliderNavigation {
+		-webkit-overflow-scrolling: touch;
+		font-size: 1.3rem;
+		overflow-x: scroll;
+
+		ul {
+			white-space: nowrap;
+
+			li {
+				width: 14rem;
+			}
+		}
+	}
+}

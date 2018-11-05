@@ -1,0 +1,101 @@
+.ng-download-center {
+    text-align: center;
+}
+
+.n2go-body .ng-download-center h2 {
+    background: #f5f5f5;
+    color: #72787C;
+    display: block;
+    padding: 18px 0;
+}
+
+.ng-download-center .clearfix {
+    clear: both;
+    width:100%;
+    display: block;
+    overflow: hidden;
+    padding: 20px 0 13px;
+}
+
+.ng-download-center .n2go-centeredContent.n2go-centeredContent-page {
+    padding: 50px 0;
+}
+
+.ng-download-center .clearfix:nth-child(odd){
+  background: #fafafa;
+}
+
+.ng-download-center img {
+    width: 70%;
+}
+
+.ng-download-center .ng-sys-information {
+    padding: 2.5% 0;
+}
+
+.ng-download-center .ng-sys-name,
+.ng-download-center .ng-plugin-name {
+    font-size: 20px;
+    font-weight: 400;
+    color: #292929;
+    margin-bottom: 4px;
+}
+
+.ng-download-center .ng-plugin-name {
+        font-size: 14px;
+}
+
+.ng-download-center select {
+    min-width: 125px;
+}
+
+.ng-download-center .ng-sys-plugins {
+    padding: 3% 0;
+}
+
+.ng-download-center .ng-sys-download {
+    padding: 2.6% 0 0;
+}
+
+.ng-download-center .ng-download-link {
+    margin-bottom: 5px;
+    min-width: 190px;
+}
+
+.ng-download-center .ng-help-link a {
+    color: #1FB4EC;
+    border-bottom: 1px solid #afe9ff;
+}
+
+.ng-download-center .ng-download-no-links {
+    -webkit-appearance: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+    background: #D8DEE5;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0.75em 1.5em 0.65em;
+    text-align: center;
+    vertical-align: middle;
+    width: auto;
+    color: #8C949A;
+    min-width: 190px;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 960px) {
+    .ng-download-center img {
+        width: 20%;
+    }
+}
+

@@ -1,0 +1,5 @@
+28.07.2014 - ver. 1.0.2
+   - Added support for VC 4.3
+
+12.09.2013 - ver. 1.0.1
+   - Apostrophe fix added

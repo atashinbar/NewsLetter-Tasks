@@ -1,0 +1,74 @@
+.#{$projectPrefix}registrationForm {
+	background: #f5f5f5;
+	padding: 2rem;
+}
+
+.#{$projectPrefix}css .#{$projectPrefix}registrationForm {
+	button {
+		margin: 2em 0;
+	}
+}
+
+.#{$projectPrefix}content .#{$projectPrefix}registrationForm_headline {
+	margin-bottom: 1.6rem;
+}
+
+.#{$projectPrefix}css .#{$projectPrefix}registrationForm_input {
+	@include border-radius( 3px );
+	@include box-shadow( 0 1px 2px rgba( 0, 0, 0, 0.05 ) );
+	@include transition( border linear .1s, box-shadow linear .1s );
+	background: #fff;
+	border: 1px solid #ccc;
+	color: #404040;
+	display: inline-block;
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+	margin: 0.4em 0 0.8em;
+	padding: 0.4rem 0.6rem;
+	vertical-align: middle;
+	width: 100%;
+
+	&:focus {
+		border-color: #00a7e6;
+		outline: 0;
+		outline: thin dotted \9;
+	}
+}
+
+.#{$projectPrefix}registrationForm-minimal {
+	background: transparent;
+	padding: 2rem 0;
+}
+
+@media ( min-width: 768px ) {
+	.#{$projectPrefix}css {
+		.#{$projectPrefix}registrationForm-minimal {
+			font-size: 1.2rem;
+
+			form {
+				@include clearfix;
+				margin: 0 -1rem;
+			}
+
+			.#{$projectPrefix}registrationForm_input {
+				margin-top: 0;
+			}
+
+			.#{$projectPrefix}registrationForm_group {
+				display: inline-block;
+				float: left;
+				padding: 0 1rem;
+				width: 20%;
+				vertical-align: top;
+			}
+
+			button {
+				display: block;
+				font-size: 1.4rem;
+				margin: 0;
+				padding: 0.6rem 1rem 0.7rem;
+				width: 100%;
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+  "name": "n2go-wordpress-theme",
+  "scripts": {
+    "build:sprite": "node build-scripts/build-svg-sprite.js"
+  },
+  "devDependencies": {
+    "glob-all": "^3.0.1",
+    "machinepack-svg-sprite": "^0.1.2",
+    "preprocess": "^3.0.2",
+    "svgo": "^0.5.6"
+  }
+}

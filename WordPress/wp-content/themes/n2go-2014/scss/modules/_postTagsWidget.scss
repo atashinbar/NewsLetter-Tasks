@@ -1,0 +1,19 @@
+.#{$projectPrefix}postTagsWidget {
+	a {
+		@include border-radius( 4px );
+		background: #2a2f35;
+		display: inline-block;
+		padding: 0.2em 0.7em;
+		margin: 0 0.5em 0.5em 0;
+	}
+}
+
+.#{$projectPrefix}css {
+	.#{$projectPrefix}blog_sidebar {
+		.#{$projectPrefix}postTagsWidget {
+			a {
+				color: #fff;
+			}
+		}
+	}
+}

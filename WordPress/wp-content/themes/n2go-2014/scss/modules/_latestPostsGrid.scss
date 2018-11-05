@@ -1,0 +1,34 @@
+.#{$projectPrefix}latestPostsGrid {
+	margin-left: -1.1rem;
+	margin-right: -1.1rem;
+
+	& > .#{$projectPrefix}gridItem {
+		padding: 0 1.1rem 2.2rem;
+	}
+}
+
+.#{$projectPrefix}latestPostsGrid-video-knowledge {
+	& > .#{$projectPrefix}gridItem {
+		width: 100%;
+	}
+}
+
+.#{$projectPrefix}latestPostsGrid-post,
+.#{$projectPrefix}latestPostsGrid-infographics,
+.#{$projectPrefix}latestPostsGrid-whitepaper {
+	& > .#{$projectPrefix}gridItem {
+		width: 50%;
+
+		&:nth-child(2n+1) {
+			clear: left;
+		}
+	}
+}
+
+@media ( max-width: 579px ) {
+	.#{$projectPrefix}latestPostsGrid {
+		& > .#{$projectPrefix}gridItem {
+			width: 100%;
+		}
+	}
+}

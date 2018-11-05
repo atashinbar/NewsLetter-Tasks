@@ -1,0 +1,46 @@
+.#{$projectPrefix}blogPostComment {
+
+}
+
+.#{$projectPrefix}blogPostComment_body {
+	@include clearfix;
+}
+
+.#{$projectPrefix}blogPostComment_avatar {
+	float: left;
+	padding-right: 1rem;
+
+	img {
+		background: #fff;
+		border: 1px solid #d5d5d5;
+		padding: 0.5rem;
+	}
+}
+
+.#{$projectPrefix}blogPostComment_content {
+	overflow: hidden;
+}
+
+.#{$projectPrefix}blogPostComment_authorName,
+.#{$projectPrefix}blogPostComment_authorSays {
+	font-style: normal;
+	font-weight: bold;
+}
+
+.#{$projectPrefix}css .#{$projectPrefix}blogPostComment_link {
+	color: #999;
+}
+
+.#{$projectPrefix}css .#{$projectPrefix}blogPostComment_replyWrapper a {
+	background: #f7f7f7;
+	border: 1px solid #ccc;
+	display: inline-block;
+	color: #969da2;
+	font-size: 1.2rem;
+	margin: 0 0 0.2rem;
+	padding: 0.125em 1em;
+
+	&:hover {
+		background: #fff;
+	}
+}

@@ -1,0 +1,42 @@
+.#{$projectPrefix}loginForm {
+	background: #f5f5f5;
+	padding: 2rem;
+}
+
+.#{$projectPrefix}css .#{$projectPrefix}loginForm {
+	button {
+		margin: 2em 0;
+	}
+}
+
+.#{$projectPrefix}content .#{$projectPrefix}loginForm_headline {
+	margin-bottom: 1.6rem;
+}
+
+.#{$projectPrefix}loginForm_error {
+	color: #ff1a27;
+	margin-bottom: 1.6rem;
+}
+
+.#{$projectPrefix}css .#{$projectPrefix}loginForm_input {
+	@include border-radius( 3px );
+	@include box-shadow( 0 1px 2px rgba( 0, 0, 0, 0.05 ) );
+	@include transition( border linear .1s, box-shadow linear .1s );
+	background: #fff;
+	border: 1px solid #ccc;
+	color: #404040;
+	display: inline-block;
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+	margin: 0.4em 0 0.8em;
+	padding: 0.4rem 0.6rem;
+	vertical-align: middle;
+	width: 100%;
+
+	&:focus {
+		@include box-shadow( inset 0 1px 1px rgba(0,0,0,.075), 0 0 4px rgba(135, 195, 255, 0.5) );
+		border-color: rgba( 82, 168, 236, 0.8 );
+		outline: 0;
+		outline: thin dotted \9;
+	}
+}

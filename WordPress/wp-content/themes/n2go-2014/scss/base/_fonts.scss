@@ -1,0 +1,19 @@
+@import "compass/css3";
+
+@include font-face( 'Open Sans', font-files('OpenSans/OpenSans-Regular-webfont.woff', 'OpenSans/OpenSans-Regular-webfont.ttf', 'OpenSans/OpenSans-Regular-webfont.svg'), 'OpenSans/OpenSans-Regular-webfont.eot', 400, normal );
+@include font-face( 'Open Sans', font-files('OpenSans/OpenSans-BoldItalic-webfont.woff', 'OpenSans/OpenSans-BoldItalic-webfont.ttf', 'OpenSans/OpenSans-BoldItalic-webfont.svg'), 'OpenSans/OpenSans-BoldItalic-webfont.eot', 700, italic );
+@include font-face( 'Open Sans', font-files('OpenSans/OpenSans-Bold-webfont.woff', 'OpenSans/OpenSans-Bold-webfont.ttf', 'OpenSans/OpenSans-Bold-webfont.svg'), 'OpenSans/OpenSans-Bold-webfont.eot', 700, normal );
+@include font-face( 'Open Sans', font-files('OpenSans/OpenSans-Italic-webfont.woff', 'OpenSans/OpenSans-Italic-webfont.ttf', 'OpenSans/OpenSans-Italic-webfont.svg'), 'OpenSans/OpenSans-Italic-webfont.eot', normal, italic );
+@include font-face( 'Open Sans', font-files('OpenSans/OpenSans-LightItalic-webfont.woff', 'OpenSans/OpenSans-LightItalic-webfont.ttf', 'OpenSans/OpenSans-LightItalic-webfont.svg'), 'OpenSans/OpenSans-LightItalic-webfont.eot', 300, italic );
+@include font-face( 'Open Sans', font-files('OpenSans/OpenSans-Light-webfont.woff', 'OpenSans/OpenSans-Light-webfont.ttf', 'OpenSans/OpenSans-Light-webfont.svg'), 'OpenSans/OpenSans-Light-webfont.eot', 300, normal );
+@include font-face( 'Open Sans', font-files('OpenSans/OpenSans-SemiBold-webfont.woff', 'OpenSans/OpenSans-SemiBold-webfont.ttf', 'OpenSans/OpenSans-SemiBold-webfont.svg'), 'OpenSans/OpenSans-SemiBold-webfont.eot', 600, normal );
+@include font-face( 'Open Sans', font-files('OpenSans/OpenSans-SemiBoldItalic-webfont.woff', 'OpenSans/OpenSans-SemiBoldItalic-webfont.ttf', 'OpenSans/OpenSans-SemiBoldItalic-webfont.svg'), 'OpenSans/OpenSans-SemiBoldItalic-webfont.eot', 600, italic );
+
+
+@include font-face( 'Kiro', font-files('Kiro/regular.woff', 'Kiro/regular.ttf', 'Kiro/regular.svg'), 'Kiro/regular.eot', 400, normal );
+@include font-face( 'Kiro', font-files('Kiro/light.woff', 'Kiro/light.ttf', 'Kiro/light.svg'), 'Kiro/light.eot', 300, normal );
+
+@include font-face( 'Proxima Nova', font-files('ProximaNova/proximanova-light.woff', 'ProximaNova/proximanova-light.ttf', 'ProximaNova/proximanova-light.svg'), 'ProximaNova/proximanova-light.eot', 300, normal );
+@include font-face( 'Proxima Nova', font-files('ProximaNova/proximanova-regular.woff', 'ProximaNova/proximanova-regular.ttf', 'ProximaNova/proximanova-regular.svg'), 'ProximaNova/proximanova-regular.eot', 400, normal );
+@include font-face( 'Proxima Nova', font-files('ProximaNova/proximanova-semibold.woff', 'ProximaNova/proximanova-semibold.ttf', 'ProximaNova/proximanova-semibold.svg'), 'ProximaNova/proximanova-semibold.eot', 500, normal );
+@include font-face( 'Proxima Nova', font-files('ProximaNova/proximanova-bold.woff', 'ProximaNova/proximanova-bold.ttf', 'ProximaNova/proximanova-bold.svg'), 'ProximaNova/proximanova-bold.eot', 600, normal );

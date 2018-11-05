@@ -1,0 +1,210 @@
+.#{$projectPrefix}pageTabsNavigation {
+	height: 4.7rem;
+
+	& > ul {
+		@include box-shadow( 0 2px 3px rgba( 0, 0, 0, 0.05 ) );
+		background: #eef2f5;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		position: fixed;
+		right: 0;
+		text-align: center;
+		z-index: 999;
+
+		& > li {
+			display: inline-block;
+			margin: 0;
+
+			& > a {
+				border-bottom: 3px solid transparent;
+				color: #868e95;
+				display: inline-block;
+				font-size: 1.4rem;
+				padding: 1.5rem 2.4rem 0.6rem;
+
+				&:focus {
+					outline: none !important;
+				}
+
+				&:hover {
+					color: #5f666b;
+				}
+
+				&.active {
+					border-bottom-color: #5f666b;
+				}
+			}
+
+			&.ui-state-active {
+				& > a {
+					border-bottom-color: currentColor;
+					color: #5f666b;
+				}
+			}
+
+			.#{$projectPrefix}flyout {
+				display: none;
+				font-size: 1.4rem;
+				left: 5%;
+				margin: 0 auto;
+				max-width: 1000px;
+				position: absolute;
+				right: 5%;
+				z-index: 1000;
+			}
+
+			.#{$projectPrefix}flyout_column {
+				text-align: left;
+
+				& > ul {
+					list-style: none;
+					margin: 0;
+					padding: 0.8rem 1.6rem;
+
+					& > li {
+						margin-bottom: 1.6rem;
+
+						&:last-child {
+							margin-bottom: 0;
+						}
+
+						& > a {
+							color: #5f666b;
+							font-weight: 500;
+						}
+
+						ul {
+							list-style: none;
+							margin: 0.6rem 0 0;
+							padding: 0;
+
+							.active {
+								font-weight: 600;
+							}
+
+							li {
+								margin: 0.6rem 0 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+@media ( max-width: 859px ) {
+	.#{$projectPrefix}pageTabsNavigation {
+		background: #f4f7f9;
+		font-size: 1.5rem;
+		height: auto;
+		margin: 2rem 0;
+		padding: 1rem 0;
+
+		& > ul {
+			@include box-shadow( none );
+			position: relative;
+			text-align: left;
+
+			& > li {
+				display: block;
+
+				&.ui-state-active a {
+					color: darken( #00a7e6, 10% );
+					background: transparent;
+					font-weight: 600;
+				}
+
+				& > a {
+					border-bottom: 0;
+					color: #00a7e6;
+					display: block;
+					padding: 0.5rem 2.4rem 0.5rem 4rem;
+					position: relative;
+
+					&:hover {
+						color: darken( #00a7e6, 10% );
+						background: transparent;
+						font-weight: 600;
+					}
+
+					&:before,
+					&:after {
+						background: #00a7e6;
+						content: '';
+						height: 0.6rem;
+						left: 2.4rem;
+						position: absolute;
+						width: 3px;
+					}
+
+					&:before {
+						@include transform( skew( 42deg, 0deg ) );
+						bottom: 50%;
+					}
+
+					&:after {
+						@include transform( skew( 138deg, 0deg ) );
+						top: 50%;
+					}
+				}
+
+				&.#{$projectPrefix}accordion-isOpen {
+					& > a {
+						&:before,
+						&:after {
+							background: #00a7e6;
+							content: '';
+							height: 3px;
+							left: 2.4rem;
+							position: absolute;
+							width: 0.6rem;
+						}
+
+						&:before {
+							@include transform( skew( 0deg, 42deg ) );
+							bottom: auto;
+							top: 50%;
+							left: 1.8rem;
+						}
+
+						&:after {
+							@include transform( skew( 0deg, 138deg ) );
+							top: 50%;
+						}
+					}
+
+					.#{$projectPrefix}flyout {
+						margin-bottom: 1.6rem;
+						padding: 0 0 0 1.6rem;
+					}
+				}
+
+				.#{$projectPrefix}flyout {
+					@include box-shadow( none );
+					background: transparent;
+					border: 0;
+					display: block;
+					height: 0;
+					left: auto;
+					max-width: auto;
+					padding: 0 0 0 1.6rem;
+					position: static;
+					right: auto;
+					z-index: auto;
+				}
+
+				.#{$projectPrefix}flyout_column {
+					padding: 0 0.8rem;
+					width: 100%;
+
+					& > ul {
+						padding: 0 1.6rem;
+					}
+				}
+			}
+		}
+	}
+}

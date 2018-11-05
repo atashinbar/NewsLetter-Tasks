@@ -1,0 +1,83 @@
+.#{$projectPrefix}grid {
+	@include clearfix;
+
+	&[data-num-items-per-row="2"] {
+		& > .#{$projectPrefix}gridItem {
+			width: 50%;
+
+			&:nth-child(2n+1) {
+				clear: left;
+			}
+		}
+	}
+
+	&[data-num-items-per-row="3"] {
+		& > .#{$projectPrefix}gridItem {
+			width: 33.33%;
+
+			&:nth-child(3n+1) {
+				clear: left;
+			}
+		}
+	}
+
+	&[data-num-items-per-row="4"] {
+		& > .#{$projectPrefix}gridItem {
+			width: 25%;
+
+			&:nth-child(4n+1) {
+				clear: left;
+			}
+		}
+	}
+
+	&[data-num-items-per-row="5"] {
+		& > .#{$projectPrefix}gridItem {
+			width: 20%;
+
+			&:nth-child(5n+1) {
+				clear: left;
+			}
+		}
+	}
+}
+
+.#{$projectPrefix}gridItem {
+	float: left;
+	min-height: 1px;
+	position: relative;
+}
+
+.#{$projectPrefix}gridItem-100 {
+	width: 100% !important;
+}
+
+@media ( max-width: 749px ) {
+	.#{$projectPrefix}grid-faq,
+	.#{$projectPrefix}grid-search {
+		&[data-num-items-per-row="2"] {
+			& > .#{$projectPrefix}gridItem {
+				width: 100%;
+
+				&:nth-child(2n+1) {
+					clear: none;
+				}
+			}
+		}
+
+		.#{$projectPrefix}searchForm-helpTopics {
+			float: none;
+			margin: 0 0 2rem;
+		}
+	}
+}
+
+@media ( max-width: 369px ) {
+	.#{$projectPrefix}grid-faq {
+		.#{$projectPrefix}searchForm-helpTopics {
+			input[type=text] {
+				width: 23rem;
+			}
+		}
+	}
+}

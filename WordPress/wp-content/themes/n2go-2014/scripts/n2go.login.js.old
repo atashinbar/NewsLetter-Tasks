@@ -1,0 +1,61 @@
+(function ($) {
+
+	function openPwDialog() {
+		window.myprompt(
+			'<div class="n2go-loginForm_headline">' + WordPress.LoginForm.messages.PasswordFormHeadline + '</div>' +
+			'<p style="width: 400px; text-align: left">' + WordPress.LoginForm.messages.PasswordFormDescription + '</p><br />' +
+			'<input type="text" name="email" id="email" style="width:100%" value="' + $("#mail").val() + '" placeholder="' + WordPress.LoginForm.messages.PasswordFormEmailInputLabel + '"><br />',
+			{'verify': true, 'textYes': WordPress.LoginForm.messages.PasswordFormRequestNewPasswordButtonLabel, 'textNo': WordPress.LoginForm.messages.PasswordFormCancelButtonLabel, 'check': true},
+			function () {
+				var email = $('#email').val();
+				if (email != '') {
+					$.post(WordPress.LoginForm.messages.PasswordFormActionUrl, {email: email}, function (data) {
+						obj = window.eval(data);
+						if (obj['error'] == 'false') {
+							$.jGrowl(WordPress.LoginForm.messages.PasswordFormSuccessMessage);
+						}
+						else {
+							if (obj['error'].indexOf("509") == 0) {
+								$.jGrowl(WordPress.LoginForm.messages.PasswordFormRequestLimitMessage);
+							}
+							else {
+								$.jGrowl(WordPress.LoginForm.messages.PasswordFormErrorMessage);
+							}
+						}
+						window.mykill();
+					}, "json");
+				}
+				else
+					$.jGrowl(WordPress.LoginForm.messages.PasswordFormEmailRequiredMessage);
+			}, function () {
+			});
+	}
+
+	$(document).ready(function () {
+
+		if ( typeof  WordPress.LoginForm === 'string' )
+		{
+			var WordPressLoginFormString = WordPress.LoginForm.replace(/&quot;/g, '"');
+			WordPress.LoginForm = $.parseJSON(WordPressLoginFormString);
+		}
+
+		$('.n2go-js-forgotPassword').click( function( event ) {
+			openPwDialog();
+			event.preventDefault();
+		});
+
+		var hasLoginFailed = ( ( location.search.split('login=')[1] || '' ).split('&')[0] ) === 'failed';
+		if ( hasLoginFailed === true ) {
+			$('.n2go-js-loginFailed').show();
+		}
+
+	});
+
+})(jQuery);
+
+
+
+
+
+
+

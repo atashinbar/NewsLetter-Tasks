@@ -1,0 +1,243 @@
+@charset "utf-8";
+#bottom{
+	background: #f4f4f4;
+	padding-top: 64px;
+	border-top: 1px solid #cccccc;
+	padding-bottom: 32px;
+	position: relative;
+}
+.bottomicon{
+	width: 126px;
+	height: 112px;
+	display: inline-block;
+	vertical-align: top;
+}
+.bottomtext{
+	color: #666666;
+	display: inline-block;
+	vertical-align: top;
+	width: 350px; 
+	font-size: 15px;
+	height: 112px;
+	padding: 12px 24px 12px 0;
+	font-weight: 300;
+	text-align: left;
+}
+.bottomtextsmall{
+	font-size: 12px;
+	text-align: right;
+	margin-top: 12px;
+}
+#voice1{
+	background: url(../images/l/erler.png) center center no-repeat transparent; 
+}
+#voice2{
+	background: url(../images/l/pruefer.png) center center no-repeat transparent; 
+}
+#voice3{
+	background: url(../images/l/modl.png) center center no-repeat transparent; 
+}
+#voice4{
+	background: url(../images/l/kastner.png) center center no-repeat transparent; 
+}
+#voice5{
+	background: url(../images/l/gebauer.png) center center no-repeat transparent; 
+}
+#voice6{
+	background: url(../images/l/szilagyi.png) center center no-repeat transparent; 
+}
+#voice7{
+	background: url(../images/l/schulz.png) center center no-repeat transparent; 
+}
+#voice8{
+	background: url(../images/l/kansok.png) center center no-repeat transparent; 
+}
+#voice9{
+	background: url(../images/l/papitashvili.png) center center no-repeat transparent; 
+}
+
+#voice10{
+	background: url(../images/l/huber.png) center center no-repeat transparent; 
+}
+#voice11{
+	background: url(../images/l/smit.png) center center no-repeat transparent; 
+}
+#voice12{
+	background: url(../images/l/lojan.png) center center no-repeat transparent; 
+}
+#voice13{
+	background: url(../images/l/cibis.png) center center no-repeat transparent; 
+}
+#voice14{
+	background: url(../images/l/kalthoff.png) center center no-repeat transparent; 
+}
+#voice15{
+	background: url(../images/l/kazatchkov.png) center center no-repeat transparent; 
+}
+
+#bottom-left{
+	display: inline-block;
+	width: 600px;
+	vertical-align: top;
+}
+#bottom-right{
+	display: inline-block;
+	width: 400px;
+	vertical-align: top;
+}
+#customers{
+	background: none repeat scroll 0 0 #EEEEEE;
+    border-color: #DDDDDD;
+    border-radius: 0 0 8px 8px;
+    border-style: solid;
+    border-width: 1px;
+    top: -3px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    left: 50%;
+    margin-left: -189px;
+    padding: 8px;
+    position: absolute;
+    width: 328px;
+}
+.ref-item{
+	width:130px;
+	height:80px;
+	display: inline-block;
+	cursor:hand;
+	cursor:pointer;
+}
+#ref1{
+	background: no-repeat url(../images/l/pictrs.png) center center;
+}
+#ref1:hover{
+	background-image: url(../images/l/pictrs_over.png);
+}
+#ref2{
+	background: no-repeat url(../images/l/biocompany.png) center center;
+}
+#ref2:hover{
+	background-image: url(../images/l/biocompany_over.png);
+}
+#ref3{
+	background: no-repeat url(../images/l/exploreb2b.png) center center;
+}
+#ref3:hover{
+	background-image: url(../images/l/exploreb2b_over.png);
+}
+#ref4{
+	background: no-repeat url(../images/l/vedi.png) center center;
+}
+#ref4:hover{
+	background-image: url(../images/l/vedi_over.png);
+}
+#ref5{
+	background: no-repeat url(../images/l/artec.png) center center;
+}
+#ref5:hover{
+	background-image: url(../images/l/artec_over.png);
+}
+#ref6{
+	background: no-repeat url(../images/l/ijm.png) center center;
+}
+#ref6:hover{
+	background-image: url(../images/l/ijm_over.png);
+}
+#ref7{
+	background: no-repeat url(../images/l/Club-Bertelsmann.png) center center;
+}
+#ref7:hover{
+	background-image: url(../images/l/Club-Bertelsmann_over.png);
+}
+#ref8{
+	background: no-repeat url(../images/l/mtv.png) center center;
+}
+#ref8:hover{
+	background-image: url(../images/l/mtv_over.png);
+}
+#ref9{
+	background: no-repeat url(../images/l/relief.png) center center;
+}
+#ref9:hover{
+	background-image: url(../images/l/relief_over.png);
+}
+#ref10{
+	background: no-repeat url(../images/l/gruenderszene.png) center center;
+}
+#ref10:hover{
+	background-image: url(../images/l/gruenderszene_over.png);
+}
+#ref11{
+	background: no-repeat url(../images/l/personology.png) center center;
+}
+#ref11:hover{
+	background-image: url(../images/l/personology_over.png);
+}
+#ref12{
+	background: no-repeat url(../images/l/telekom.png) center center;
+}
+#ref12:hover{
+	background-image: url(../images/l/telekom_over.png);
+}
+#ref13{
+	background: no-repeat url(../images/l/tuberlin.png) center center;
+}
+#ref13:hover{
+	background-image: url(../images/l/tuberlin_over.png);
+}
+#ref14{
+	background: no-repeat url(../images/l/wirkaufens.png) center center;
+}
+#ref14:hover{
+	background-image: url(../images/l/wirkaufens_over.png);
+}
+#ref15{
+	background: no-repeat url(../images/l/prozenthaus24.png) center center;
+}
+#ref15:hover{
+	background-image: url(../images/l/prozenthaus24_over.png);
+}
+#ref16{
+	background: no-repeat url(../images/l/zugeschnuert.png) center center;
+}
+#ref16:hover{
+	background-image: url(../images/l/zugeschnuert_over.png);
+}
+#ref17{
+	background: no-repeat url(../images/l/ableton.png) center center;
+}
+#ref17:hover{
+	background-image: url(../images/l/ableton_over.png);
+}
+#ref18{
+	background: no-repeat url(../images/l/fahrstundenplaner.png) center center;
+}
+#ref18:hover{
+	background-image: url(../images/l/fahrstundenplaner_over.png);
+}
+#ref19{
+	background: no-repeat url(../images/l/advantage-international.png) center center;
+}
+#ref19:hover{
+	background-image: url(../images/l/advantage-international_over.png);
+}
+#ref20{
+	background: no-repeat url(../images/l/faszinata.png) center center;
+}
+#ref20:hover{
+	background-image: url(../images/l/faszinata_over.png);
+}
+#ref21{
+	background: no-repeat url(../images/l/chip.png) center center;
+}
+#ref21:hover{
+	background-image: url(../images/l/chip_over.png);
+}
+#ref22{
+	background: no-repeat url(../images/l/paperc.png) center center;
+}
+#ref22:hover{
+	background-image: url(../images/l/paperc_over.png);
+}

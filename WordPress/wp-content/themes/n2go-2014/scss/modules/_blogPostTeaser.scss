@@ -1,0 +1,42 @@
+.#{$projectPrefix}css .#{$projectPrefix}blogPostTeaser {
+	@include clearfix;
+	color: #484848;
+	display: block;
+	margin-bottom: 4.2rem;
+
+	&:hover {
+		color: #484848;
+	}
+}
+
+.#{$projectPrefix}content .#{$projectPrefix}blogPostTeaser_headline {
+	margin: 0;
+}
+
+.#{$projectPrefix}content .#{$projectPrefix}blogPostTeaser_publishedOn {
+	font-size: 1.1rem;
+	margin-bottom: 1.6rem;
+}
+
+.#{$projectPrefix}blogPostTeaser_imageWrapper {
+	float: left;
+	margin-right: 1.5rem;
+}
+
+.#{$projectPrefix}blogPostTeaser_text {
+	overflow: hidden;
+}
+
+@media ( max-width: 499px ) {
+	.#{$projectPrefix}blogPostTeaser_text {
+		margin-bottom: 2rem;
+		overflow: inherit;
+	}
+}
+
+@media ( max-width: 439px ) {
+	.#{$projectPrefix}blogPostTeaser_imageWrapper {
+		display: block;
+		float: none;
+	}
+}

@@ -1,0 +1,129 @@
+.#{$projectPrefix}header {
+	@include box-shadow( 0 2px 3px rgba( 0, 0, 0, 0.05 ) );
+	background: #f4f7f9;
+	left: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+
+	.#{$projectPrefix}languageDropdown_select,
+	.#{$projectPrefix}offCanvasLanguageSelectorToggle {
+		margin-right: 16px;
+	}
+}
+
+.#{$projectPrefix}header ~ .#{$projectPrefix}content {
+	padding-top: 7.6rem;
+}
+
+.#{$projectPrefix}header_logoWrapper {
+	display: inline-block;
+	margin-right: 1rem;
+	padding: 2rem 0;
+}
+
+.#{$projectPrefix}header_logo {
+	display: inline-block;
+	height: 3.6rem;
+	vertical-align: middle;
+	width: 20.9rem;
+
+	svg {
+		vertical-align: top;
+	}
+}
+
+.#{$projectPrefix}css .#{$projectPrefix}header_navigation {
+	display: inline-block;
+	font-size: 0;
+	line-height: 0;
+	vertical-align: middle;
+}
+
+.#{$projectPrefix}header_right {
+	float: right;
+	margin-top: 2rem;
+	vertical-align: middle;
+}
+
+.#{$projectPrefix}header_navigation {
+	ul {
+		@include clearfix;
+		display: inline-block;
+		margin-bottom: 0;
+		margin-top: 0;
+		list-style: none;
+
+		li {
+			float: left;
+
+			a {
+				border-bottom: 4px solid transparent;
+				color: #5f666b;
+				display: inline-block;
+				font-size: 1.4rem;
+				font-weight: normal;
+				letter-spacing: 0.06em;
+				margin: 0 1.5rem;
+				padding: 4.2rem 0.5rem 3rem;
+				vertical-align: middle;
+
+				&:hover,
+				&:active,
+				&.active {
+					border-bottom-color: currentColor;
+					color: #00a7e6;
+				}
+			}
+		}
+	}
+}
+
+.#{$projectPrefix}css .#{$projectPrefix}header .#{$projectPrefix}header_loginButton {
+	margin-right: 16px;
+}
+
+@media ( max-width: 1199px ) {
+	.#{$projectPrefix}css .#{$projectPrefix}header_navigation {
+		display: none;
+	}
+}
+
+@media ( max-width: 639px ) {
+	.#{$projectPrefix}header_logo {
+		height: (0.75 * 3.6rem);
+		width: (0.75 * 20.9rem + 1);
+	}
+
+	.n2go-header_right {
+		margin-top: 1.4rem;
+	}
+}
+
+@media ( max-width: 559px ) {
+	.#{$projectPrefix}css .#{$projectPrefix}header_loginButton {
+		display: none;
+	}
+}
+
+@media ( max-width: 469px ) {
+	.#{$projectPrefix}css .#{$projectPrefix}header_registerButton {
+		display: none;
+	}
+
+	.#{$projectPrefix}header .#{$projectPrefix}offCanvasLanguageSelectorToggle {
+		margin-right: 0;
+	}
+
+	.#{$projectPrefix}offCanvasNavigationToggle {
+		float: left;
+		padding-top: 2.2rem;
+	}
+
+	.#{$projectPrefix}header_logoWrapper {
+		display: block;
+		text-align: center;
+	}
+}

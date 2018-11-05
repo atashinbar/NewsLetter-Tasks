@@ -1,0 +1,33 @@
+.#{$projectPrefix}embed {
+	iframe {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+}
+
+.#{$projectPrefix}embed_content {
+	height: 0;
+	padding: 0 0 56.25%;
+	position: relative;
+}
+
+.#{$projectPrefix}embed-inScreen {
+	max-width: 43.2rem;
+	overflow: hidden;
+
+	.#{$projectPrefix}embed_content {
+		background: image-url("../images/embed-screen.png") no-repeat;
+		@include background-size( contain );
+		padding: 0 0 79.4%;
+	}
+
+	iframe {
+		height: 60.93%;
+		left: 3.47%;
+		top: 4.66%;
+		width: 85.87%;
+	}
+}

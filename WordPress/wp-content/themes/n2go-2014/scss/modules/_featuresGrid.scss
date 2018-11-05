@@ -1,0 +1,49 @@
+.#{$projectPrefix}featuresGrid {
+	font-size: 1.4rem;
+	margin: 0 -0.2rem;
+
+	.#{$projectPrefix}gridItem {
+		padding: 0 0.2rem;
+	}
+}
+
+.#{$projectPrefix}featuresGrid_column {
+	background: #f4f7f9;
+	padding: 0.5rem 0;
+}
+
+@media ( max-width: 999px ) {
+	.#{$projectPrefix}grid.#{$projectPrefix}featuresGrid {
+		&[data-num-items-per-row="4"] {
+			& > .#{$projectPrefix}gridItem {
+				width: 50%;
+
+				&:nth-child(4n+1) {
+					clear: none;
+				}
+
+				&:nth-child(2n+1) {
+					clear: left;
+				}
+			}
+		}
+	}
+}
+
+@media ( max-width: 479px ) {
+	.#{$projectPrefix}grid.#{$projectPrefix}featuresGrid {
+		&[data-num-items-per-row="4"] {
+			& > .#{$projectPrefix}gridItem {
+				width: 100%;
+
+				&:nth-child(4n+1) {
+					clear: none;
+				}
+
+				&:nth-child(2n+1) {
+					clear: none;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+@charset "utf-8";
+.portlet{
+	background:url(../images/1024.png) top #f0f0f0;
+	border:1px solid #ffffff;
+	border-radius:4px;
+	margin:0.4em;
+	padding:0.4em 0.6em;
+	position:relative;
+	display:table;
+	width: 980px;
+}
+.portlet:hover{
+	border:1px solid #ccc;
+}
+.portlet-header{
+	background:url(../images/64.png) #3399ff;
+	border-radius: 2px;	
+	padding: 0.4em 0.6em;
+	color:#fff;
+	margin-bottom: 1em;
+}
+.portlet-content{
+	padding: 0 4px;
+}
+#picturesTable img{
+	border: 1px solid #ccc;
+}

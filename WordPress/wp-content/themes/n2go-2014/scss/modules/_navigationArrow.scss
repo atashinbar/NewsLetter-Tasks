@@ -1,0 +1,41 @@
+.#{$projectPrefix}navigationArrow {
+	cursor: pointer;
+	height: 4rem;
+	position: relative;
+	width: 4rem;
+
+	&:before,
+	&:after {
+		@include transform( skew( 145deg, 0deg ) );
+		background: #969da2;
+		content: '';
+		height: 50%;
+		left: 50%;
+		position: absolute;
+		top: 0;
+		width: 3px;
+	}
+
+	&:after {
+		@include transform( skew( 35deg, 0deg ) );
+		top: 50%;
+	}
+}
+
+.#{$projectPrefix}navigationArrow-left {
+
+}
+
+.#{$projectPrefix}navigationArrow-right {
+	&:before,
+	&:after {
+		@include transform( skew( -145deg, 0deg ) );
+		left: auto;
+		right: 50%;
+	}
+
+	&:after {
+		@include transform( skew( -35deg, 0deg ) );
+		top: 50%;
+	}
+}

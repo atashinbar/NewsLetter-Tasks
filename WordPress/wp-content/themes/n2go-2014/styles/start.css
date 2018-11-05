@@ -1,0 +1,361 @@
+@charset "utf-8";
+body{
+	min-width: 1240px;	
+}
+#menuaccount{
+	top: 74px !important;	
+	border-radius: 4px 0 0 4px !important;
+}
+#content{
+margin-bottom:0 !important;
+}
+#slidecontainer{
+	overflow:hidden; 
+	height:345px;
+	margin-top:-1em;	
+	box-shadow: 0 0 10px #999;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	background-color: #276F8E;
+	position: relative;
+}
+.slide1-1{
+	background: url(../images/l/slider1.png) no-repeat 45% center;
+}
+#slide1{
+	background: url(../images/l/slider1-3.png) no-repeat 45% 40px;
+}
+.ss1{
+	background: url(../images/l/slider1-5.png) no-repeat 45% 40px !important;
+}
+.ss2{
+	background: url(../images/l/slider1-4.png) no-repeat 45% 40px !important;
+}
+#slide1a{
+	background: url(../images/l/slider_Promo.png) no-repeat 45% center;
+}
+#slide1b{
+	background: url(../images/l/slider_personalisierung.png) no-repeat 45% center;
+}
+#slide2{
+	background: url(../images/l/slider2.png) no-repeat 45% center;
+}
+#slide2a{
+	background: url(../images/l/slider2a.png) no-repeat 45% center;
+}
+#slide3{
+	background: url(../images/l/slider3.png) no-repeat 45% center;
+}
+#slide4{
+	background: url(../images/l/slider4.png) no-repeat 45% center;
+}
+#slide5{
+	background: url(../images/l/slider5.png) no-repeat 45% center;
+}
+#slide6{
+	background: url(../images/l/slider6.png) no-repeat 45% center;
+}
+.fcontainer{
+	height: 345px;
+	width: 100%;
+	text-align:left;
+}
+.fcontent{
+	padding-top: -1em;
+	text-align: center;
+	margin-left: -450px;
+	min-width: 500px;
+	color: #ffffff;	
+	font-size: 0.9em;
+}
+.bubble{
+	width: 186px;
+	height: 230px;
+	display: inline-block;
+	margin: 20px 4em;
+	cursor: pointer;
+	cursor: hand;
+}
+.lpbutton{
+	background: url(../images/l/button.png) center center no-repeat transparent; 
+	padding: 12px 0px;
+	width: 283px;
+	height: 23px;
+	font-size: 18px;
+	color: #ffffff;
+	text-align: center;
+}
+.lpbutton:hover{
+	cursor: hand;
+	cursor: pointer;
+	background-image: url(../images/l/button_hover.png);
+}
+#register{
+	background: url(../images/l/register.png) center center no-repeat transparent; 
+}
+#questions{
+	background: url(../images/l/questions.png) center center no-repeat transparent; 
+}
+#demo{
+	background: url(../images/l/demo_<?php Zend_Registry::get('Zend_Translate')->translate('lang');?>.png) center center no-repeat transparent; 
+}
+#bottom{
+	background: #e5e5e5;
+	padding-top: 24px;
+	border-top: 1px solid #ccc;
+}
+.bottomicon{
+	width: 126px;
+	height: 112px;
+	display: inline-block;
+	vertical-align: top;
+}
+.bottomtext{
+	color: #666666;
+	display: inline-block;
+	vertical-align: top;
+	width: 250px; 
+	font-size: 15px;
+	height: 112px;
+	padding: 12px 24px 12px 0;
+}
+.bottomtextsmall{
+	font-size: 12px;
+	text-align: right;
+	margin-top: 12px;
+}
+#voice1{
+	background: url(../images/l/erler.png) center center no-repeat transparent; 
+}
+#voice2{
+	background: url(../images/l/pruefer.png) center center no-repeat transparent; 
+}
+#voice3{
+	background: url(../images/l/modl.png) center center no-repeat transparent; 
+}
+#voice4{
+	background: url(../images/l/kastner.png) center center no-repeat transparent; 
+}
+#voice5{
+	background: url(../images/l/gebauer.png) center center no-repeat transparent; 
+}
+#voice6{
+	background: url(../images/l/szilagyi.png) center center no-repeat transparent; 
+}
+#voice7{
+	background: url(../images/l/schulz.png) center center no-repeat transparent; 
+}
+#voice8{
+	background: url(../images/l/kansok.png) center center no-repeat transparent; 
+}
+#voice9{
+	background: url(../images/l/papitashvili.png) center center no-repeat transparent; 
+}
+.bottompro{
+	font-size: 20px;
+	color: #666666;
+	display: inline-block;
+	vertical-align: middle;	
+	width: 250px; 
+	height: 84px;
+	padding: 40px 24px 12px 0;	
+	
+}
+#pro1{
+	background: url(../images/l/verbessert.png) center center no-repeat transparent; 
+}
+#pro2{
+	background: url(../images/l/persoenlich.png) center center no-repeat transparent; 
+}
+#pro3{
+	background: url(../images/l/intuitiv.png) center center no-repeat transparent; 
+}
+.ribbonleft{
+	background: url(../images/l/ribbonleft.png) top left no-repeat transparent; 
+	width: 157px;
+	height: 70px;
+	display: inline-block;
+}
+.ribboncenter{
+	background: url(../images/l/ribboncenter.png) top left repeat-x transparent; 
+	display: inline-block;
+	width: 900px; 
+	height: 50px;
+	padding-top: 26px;
+	color: #ffffff;
+	vertical-align: top;
+	font-size: 18px;
+}
+.ribbonright{
+	background: url(../images/l/ribbonright.png) top left no-repeat transparent; 
+	width: 144px;
+	height: 70px;
+	display: inline-block;
+}
+.ref-item{
+	width:200px;
+	height:140px;
+	display: none;
+	cursor:hand;
+	cursor:pointer;
+}
+#ref1{
+	background: no-repeat url(../images/l/pictrs.png) center;
+}
+#ref1:hover{
+	background-image: url(../images/l/pictrs_over.png);
+}
+#ref2{
+	background: no-repeat url(../images/l/biocompany.png) center;
+}
+#ref2:hover{
+	background-image: url(../images/l/biocompany_over.png);
+}
+#ref3{
+	background: no-repeat url(../images/l/exploreb2b.png) center;
+}
+#ref3:hover{
+	background-image: url(../images/l/exploreb2b_over.png);
+}
+#ref4{
+	background: no-repeat url(../images/l/vedi.png) center;
+}
+#ref4:hover{
+	background-image: url(../images/l/vedi_over.png);
+}
+#ref5{
+	background: no-repeat url(../images/l/artec.png) center;
+}
+#ref5:hover{
+	background-image: url(../images/l/artec_over.png);
+}
+#ref6{
+	background: no-repeat url(../images/l/ijm.png) center;
+}
+#ref6:hover{
+	background-image: url(../images/l/ijm_over.png);
+}
+#ref7{
+	background: no-repeat url(../images/l/Club-Bertelsmann.png) center;
+}
+#ref7:hover{
+	background-image: url(../images/l/Club-Bertelsmann_over.png);
+}
+#ref8{
+	background: no-repeat url(../images/l/mtv.png) center;
+}
+#ref8:hover{
+	background-image: url(../images/l/mtv_over.png);
+}
+#ref9{
+	background: no-repeat url(../images/l/relief.png) center;
+}
+#ref9:hover{
+	background-image: url(../images/l/relief_over.png);
+}
+#ref10{
+	background: no-repeat url(../images/l/gruenderszene.png) center;
+}
+#ref10:hover{
+	background-image: url(../images/l/gruenderszene_over.png);
+}
+#ref11{
+	background: no-repeat url(../images/l/personology.png) center;
+}
+#ref11:hover{
+	background-image: url(../images/l/personology_over.png);
+}
+#ref12{
+	background: no-repeat url(../images/l/telekom.png) center;
+}
+#ref12:hover{
+	background-image: url(../images/l/telekom_over.png);
+}
+#ref13{
+	background: no-repeat url(../images/l/tuberlin.png) center;
+}
+#ref13:hover{
+	background-image: url(../images/l/tuberlin_over.png);
+}
+#ref14{
+	background: no-repeat url(../images/l/wirkaufens.png) center;
+}
+#ref14:hover{
+	background-image: url(../images/l/wirkaufens_over.png);
+}
+#ref15{
+	background: no-repeat url(../images/l/prozenthaus24.png) center;
+}
+#ref15:hover{
+	background-image: url(../images/l/prozenthaus24_over.png);
+}
+#ref16{
+	background: no-repeat url(../images/l/myparfuem.png) center;
+}
+#ref16:hover{
+	background-image: url(../images/l/myparfuem_over.png);
+}
+#ref17{
+	background: no-repeat url(../images/l/ableton.png) center;
+}
+#ref17:hover{
+	background-image: url(../images/l/ableton_over.png);
+}
+#ref18{
+	background: no-repeat url(../images/l/fahrstundenplaner.png) center;
+}
+#ref18:hover{
+	background-image: url(../images/l/fahrstundenplaner_over.png);
+}
+#ref19{
+	background: no-repeat url(../images/l/advantage-international.png) center;
+}
+#ref19:hover{
+	background-image: url(../images/l/advantage-international_over.png);
+}
+#ref20{
+	background: no-repeat url(../images/l/faszinata.png) center;
+}
+#ref20:hover{
+	background-image: url(../images/l/faszinata_over.png);
+}
+.startpage_link:hover{
+	text-decoration: underline;
+}
+a.startpage_link ,a:visited.startpage_link {
+	color:#666666;
+}
+
+
+#leftref{
+	position:absolute; left:0; top: 50px; display: none;
+	background: url(../images/left.png) center center no-repeat;
+	width: 24px;
+	height: 32px;
+	cursor: hand;
+	cursor: pointer;
+}	
+#rightref{
+	position:absolute; right:0; top: 50px;
+	background: url(../images/right.png) center center no-repeat;
+	width: 24px;
+	height: 32px;
+	cursor: hand;
+	cursor: pointer;
+}
+#leftref:hover{
+	background-image: url(../images/left_over.png);
+}
+#rightref:hover{
+	background-image: url(../images/right_over.png);
+}
+.teaser{
+	margin-left: 4px; 
+	margin-top: 8px;
+	text-align:left; 
+	max-width: 380px;
+}
+.teaser p{
+	font-size:15px;	
+}
+

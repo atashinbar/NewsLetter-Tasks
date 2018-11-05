@@ -1,0 +1,24 @@
+.#{$projectPrefix}flyout {
+	@include box-shadow( 0 2px 3px rgba( 0, 0, 0, 0.05 ) );
+	@include clearfix;
+	background: #f4f7f9;
+	border: 1px solid #E0E0E0;
+	overflow: hidden;
+	padding: 2rem 2rem 4rem 2rem;
+
+	a {
+		color: #868e95;
+
+		&:hover {
+			color: #868e95;
+			text-decoration: underline;
+		}
+	}
+}
+
+.#{$projectPrefix}flyout_column {
+	float: left;
+	padding: 1rem;
+	min-height: 1px;
+	width: 25%;
+}

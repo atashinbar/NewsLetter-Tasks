@@ -1,0 +1,78 @@
+.#{$projectPrefix}relatedPosts {
+	margin: 0 0 4rem;
+
+	ol {
+		@include clearfix;
+		list-style: none;
+		margin: 0 -1rem;
+		padding: 0;
+	}
+
+	li {
+		float: left;
+		padding: 1rem 1.2rem;
+		width: 50%;
+
+		& > a {
+			@include clearfix;
+			color: inherit;
+			display: block;
+			font-weight: normal !important;
+		}
+
+		.imageWrapper {
+			font-size: 0;
+			height: 0;
+			margin: 0 0 5px;
+			overflow: hidden;
+			padding-bottom: 41.379%;
+			position: relative;
+
+			img {
+				height: auto;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+			}
+		}
+
+		.content {
+			overflow: hidden;
+		}
+
+		.title {
+			font-weight: 500;
+			line-height: 1.56;
+		}
+
+		&:nth-child(2n+1) {
+			clear: left;
+		}
+	}
+
+}
+
+.#{$projectPrefix}relatedPosts_headline {
+	font-size: 2.4rem;
+	font-weight: normal;
+	line-height: 1.1;
+	margin: 0;
+}
+
+.#{$projectPrefix}css .#{$projectPrefix}relatedPosts-list {
+	ol {
+		margin: 0;
+	}
+
+	li {
+		float: none;
+		padding: 0;
+		width: auto;
+	}
+
+	a {
+		font-weight: inherit !important;
+		text-decoration: underline !important;
+	}
+}

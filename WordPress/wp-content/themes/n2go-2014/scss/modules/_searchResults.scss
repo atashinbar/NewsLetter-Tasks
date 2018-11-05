@@ -1,0 +1,55 @@
+.#{$projectPrefix}searchResults {
+	margin: 0 auto;
+	max-width: 804px;
+
+	& > h1 {
+		margin-bottom: 6rem;
+		padding-top: 7rem;
+		text-align: center;
+	}
+
+	& > h2 {
+		border-bottom: 1px solid #f5f5f5;
+		margin: 0 0 0.2em;
+		padding: 0 0 0.5rem;
+	}
+
+	& > .#{$projectPrefix}searchForm {
+		font-size: 2.4rem;
+		margin-bottom: 6rem;
+	}
+}
+
+.#{$projectPrefix}searchResults_filter {
+	margin: 0 0 5rem;
+
+	label {
+		display: inline-block;
+		margin-right: 1em;
+	}
+}
+
+@media ( max-width: 639px ) {
+	.#{$projectPrefix}searchResults {
+		& > h1 {
+			margin: 4rem 0 3rem;
+		}
+
+		& > .#{$projectPrefix}searchForm {
+			font-size: 2rem;
+			margin-bottom: 5rem;
+		}
+	}
+}
+
+@media ( max-width: 479px ) {
+	.#{$projectPrefix}searchResults {
+		& > h1 {
+			margin: 4rem 0 3rem;
+		}
+
+		& > .#{$projectPrefix}searchForm {
+			font-size: 1.6rem;
+		}
+	}
+}

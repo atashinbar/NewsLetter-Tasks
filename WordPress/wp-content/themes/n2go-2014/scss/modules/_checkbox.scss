@@ -1,0 +1,33 @@
+.#{$projectPrefix}checkbox {
+	cursor: pointer;
+
+	input {
+		display: none;
+	}
+}
+
+.#{$projectPrefix}checkbox-round {
+	@include border-radius( 50% );
+	border: 1px solid currentColor;
+	display: inline-block;
+	height: 1em;
+	position: relative;
+	top: 0.25em;
+	width: 1em;
+	vertical-align: top;
+}
+
+.#{$projectPrefix}checkbox_checkmark {
+	display: none;
+	padding: 0.1em;
+
+	path {
+		fill: currentColor;
+	}
+}
+
+.#{$projectPrefix}checkbox-isChecked {
+	.#{$projectPrefix}checkbox_checkmark {
+		display: block;
+	}
+}

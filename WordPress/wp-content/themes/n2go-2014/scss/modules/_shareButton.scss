@@ -1,0 +1,113 @@
+.#{$projectPrefix}css .#{$projectPrefix}shareButton {
+	@include border-radius( 3px );
+	background: #afafaf;
+	color: #fff;
+	display: inline-block;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0 1em 1em 0;
+	min-height: 28px;
+	min-width: 110px;
+	padding: 0.4em 0.85em 0.1em 4em;
+	position: relative;
+
+	&:hover {
+		color: #fff;
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.#{$projectPrefix}shareButton_icon {
+	@include border-radius( 3px 0 0 3px );
+	background: #9b9b9b;
+	display: inline-block;
+	height: 100%;
+	left: 0;
+	padding: 0 1.2em 0 0.7em;
+	position: absolute;
+	top: 0;
+	width: 3.4em;
+
+	path {
+		fill: currentColor;
+	}
+
+	&:before {
+		border: 0.8em solid transparent;
+		border-left: 0;
+		border-right: 0.8em solid #afafaf;
+		content: '';
+		height: 0;
+		margin: -0.7em 0 0;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		width: 0;
+	}
+}
+
+.#{$projectPrefix}shareButton_text {
+	@include text-shadow( 0 1px 0 rgba( 0, 0, 0, 0.1 ) );
+}
+
+.#{$projectPrefix}css .#{$projectPrefix}shareButton-facebook {
+	background: #6576b2;
+
+	.#{$projectPrefix}shareButton_icon {
+		background: #40569b;
+
+		&:before {
+			border-right-color: #6576b2;
+		}
+	}
+}
+
+.#{$projectPrefix}css .#{$projectPrefix}shareButton-twitter {
+	background: #5bc2f2;
+
+	.#{$projectPrefix}shareButton_icon {
+		background: #2bb2ee;
+
+		&:before {
+			border-right-color: #5bc2f2;
+		}
+	}
+}
+
+.#{$projectPrefix}css .#{$projectPrefix}shareButton-googleplus {
+	background: #e96a4e;
+
+	.#{$projectPrefix}shareButton_icon {
+		background: #e24b2a;
+
+		&:before {
+			border-right-color: #e96a4e;
+		}
+	}
+}
+
+@media ( max-width: 639px ) {
+	.#{$projectPrefix}css .#{$projectPrefix}shareButton {
+		margin: 0 1em 1em 0;
+		min-width: 0;
+		padding: 0.4em 0.85em 0.1em;
+		width: 3.4em;
+	}
+
+	.#{$projectPrefix}shareButton_text {
+		display: none;
+	}
+
+	.#{$projectPrefix}shareButton_icon {
+		@include border-radius( 3px );
+		padding: 0 1em;
+
+		&:before {
+			content: none;
+		}
+	}
+}

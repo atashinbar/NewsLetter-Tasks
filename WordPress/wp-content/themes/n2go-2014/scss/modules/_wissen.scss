@@ -1,0 +1,62 @@
+.#{$projectPrefix}wissen {
+	background: #f4f7f9;
+	color: #5f666b;
+	font-family: 'Proxima Nova';
+	letter-spacing: 0.02em;
+
+	.#{$projectPrefix}pageTabsNavigation > ul {
+		@include box-shadow( 0 2px 3px rgba( 0, 0, 0, 0.05 ) );
+		background: #f4f7f9;
+	}
+
+	hr {
+		border: 0;
+		border-top: 1px solid #d8dee4;
+		margin: 0.4em 0 0.8em;
+	}
+}
+
+@media ( max-width: 859px ) {
+	.#{$projectPrefix}wissen {
+		.#{$projectPrefix}pageTabsNavigation {
+			@include box-shadow( 0 2px 3px rgba( 0, 0, 0, 0.05 ) );
+			@include border-radius( 4px );
+			background: #fff;
+			padding: 2rem;
+
+			ul {
+				@include box-shadow( none );
+				background: transparent;
+			}
+
+			& > ul {
+				& > li {
+					& > a {
+						padding: 0.5rem 0 0.5rem 1.6rem;
+
+						&:before,
+						&:after {
+							left: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media ( max-width: 639px ) {
+	.#{$projectPrefix}wissen {
+		h1 {
+			font-size: 2.4rem;
+		}
+
+		h2 {
+			font-size: 2rem;
+		}
+
+		h3 {
+			font-size: 1.8rem;
+		}
+	}
+}

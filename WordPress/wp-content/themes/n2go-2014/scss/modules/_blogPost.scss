@@ -1,0 +1,152 @@
+.#{$projectPrefix}blogPost {
+	@include clearfix;
+	background: #f5f5f5;
+	display: block;
+}
+
+.#{$projectPrefix}css .#{$projectPrefix}blogPost_headline {
+	margin-bottom: 0.6rem;
+}
+
+.#{$projectPrefix}blogPost_date {
+	font-size: 1.2rem;
+}
+
+.#{$projectPrefix}blogPost_content {
+	font-size: 1.6rem;
+	line-height: 1.75;
+
+	hr {
+		margin-bottom: 2rem;
+		margin-top: 2rem;
+	}
+
+	h1 {
+		font-size: 2.8rem;
+	}
+
+	h2 {
+		font-size: 2.4rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
+
+	p ~ h1,
+	p ~ h2,
+	p ~ h3 {
+		margin-top: 2em;
+	}
+
+	& > .ssba {
+		margin-top: 1em;
+	}
+}
+
+.#{$projectPrefix}css .#{$projectPrefix}blogPost_tags {
+	font-size: 1.2rem;
+	font-weight: 300;
+	line-height: 1.6rem;
+	margin: 1em 0 2em;
+	padding: 0 0 0 2rem;
+	position: relative;
+	text-transform: uppercase;
+
+	a {
+		color: #61676c;
+	}
+}
+
+.#{$projectPrefix}css .#{$projectPrefix}blogPost_tagsIcon {
+	height: 1.2rem;
+	left: 0;
+	position: absolute;
+	top: 0.2em;
+	width: 1.2rem;
+
+	path {
+		fill: #61676c;
+	}
+}
+
+.#{$projectPrefix}blogPost_registrationForm {
+	@include clearfix;
+	font-size: 1.2rem;
+
+	.#{$projectPrefix}registrationForm_label {
+		color: #484848;
+		float: left;
+		margin-right: 0.4rem;
+		margin-top: 0.8rem;
+		width: 13rem;
+	}
+}
+
+.#{$projectPrefix}css .#{$projectPrefix}blogPost_registrationForm {
+	.#{$projectPrefix}registrationForm_headline {
+		color: inherit;
+	}
+
+	.#{$projectPrefix}registrationForm_input {
+		margin: 0.2rem 0;
+		width: 20rem;
+	}
+
+	button {
+		margin-top: 1rem;
+	}
+}
+
+.#{$projectPrefix}blogPost_registrationFormLeft {
+	float: left;
+	margin-right: 4.5rem;
+	width: 33.5rem;
+}
+
+.#{$projectPrefix}blogPost_registrationFormRight {
+	overflow: hidden;
+	padding: 2.1rem 0 0.2rem;
+}
+
+@media ( max-width: 799px ) {
+	.#{$projectPrefix}css .#{$projectPrefix}blog_main .comment-form textarea {
+		width: 30rem;
+	}
+}
+
+@media ( max-width: 669px ) {
+	.#{$projectPrefix}blogPost_registrationFormLeft {
+		float: none;
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.#{$projectPrefix}blogPost_registrationFormRight {
+		overflow: hidden;
+		padding-top: 2.6rem;
+	}
+}
+
+@media ( max-width: 479px ) {
+	.#{$projectPrefix}css .#{$projectPrefix}blog_main {
+		.comment-form {
+			input[type=text],
+			textarea {
+				width: 100%;
+			}
+
+			label {
+				&[for=comment] {
+					top: 0;
+				}
+			}
+		}
+	}
+
+	.#{$projectPrefix}css .#{$projectPrefix}blogPost_registrationForm {
+		.n2go-registrationForm_input {
+			width: 100%;
+		}
+	}
+}

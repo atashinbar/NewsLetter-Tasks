@@ -1,0 +1,9 @@
+@charset "utf-8";
+#submenu{
+	position: fixed;
+	z-index: 9999;
+	margin-top: -42px;
+}
+#content{
+	padding-top: 126px;
+}

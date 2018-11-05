@@ -1,0 +1,137 @@
+.#{$projectPrefix}blog {
+	overflow: hidden;
+	position: relative;
+}
+
+.#{$projectPrefix}blog_sidebar,
+.#{$projectPrefix}blog_main {
+	padding: 0 0 3.4rem;
+}
+
+.#{$projectPrefix}blog_main {
+	overflow: hidden;
+}
+
+.#{$projectPrefix}blog_sidebar {
+	float: right;
+	padding-left: 2.1rem;
+	position: relative;
+	width: 31.5rem;
+}
+
+.#{$projectPrefix}blog {
+
+	.#{$projectPrefix}blog_main {
+		h1,
+		h2,
+		h3 {
+			color: inherit;
+		}
+	}
+
+	.#{$projectPrefix}blog_sidebar {
+		.#{$projectPrefix}blog_title {
+			color: #1b4b60;
+			display: block;
+			font-size: 2.6rem;
+			line-height: 1.153;
+		}
+	}
+
+	.#{$projectPrefix}blog_main {
+		.#{$projectPrefix}blogPostTeaser_headline {
+			color: #61676c;
+			font-size: 1.56rem;
+			font-weight: 500;
+		}
+
+		.#{$projectPrefix}blogPostTeaser-large {
+			.#{$projectPrefix}blogPostTeaser_headline {
+				font-size: 2.8rem;
+				font-weight: 400;
+				line-height: 1.35;
+			}
+		}
+	}
+}
+
+.#{$projectPrefix}blog_mobileTitle {
+	display: none;
+}
+
+.#{$projectPrefix}blog_main-full {
+	padding-right: 0;
+}
+
+@media ( max-width: 1199px ) {
+	.#{$projectPrefix}blog_main {
+		.#{$projectPrefix}relatedPosts {
+			li {
+				width: 50%;
+			}
+		}
+	}
+}
+
+@media ( max-width: 964px ) {
+	.#{$projectPrefix}blog {
+		&:before {
+			margin-left: 0;
+		}
+	}
+
+	.#{$projectPrefix}css .#{$projectPrefix}blog_sidebar {
+		display: none;
+	}
+
+	.#{$projectPrefix}blog_main {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.#{$projectPrefix}blog_mobileTitle {
+		display: block;
+	}
+}
+
+@media ( max-width: 639px ) {
+	.#{$projectPrefix}blog {
+
+		.#{$projectPrefix}blog_sidebar {
+			.#{$projectPrefix}blog_title {
+				font-size: 2.2rem;
+			}
+		}
+
+		.#{$projectPrefix}blog_main {
+			.#{$projectPrefix}blogPostTeaser-large {
+				.#{$projectPrefix}blogPostTeaser_headline {
+					font-size: 2.4rem;
+				}
+			}
+		}
+	}
+}
+
+@media ( max-width: 579px ) {
+	.#{$projectPrefix}blog {
+		.#{$projectPrefix}blog_main {
+			.#{$projectPrefix}blogPostTeaser-large {
+				.#{$projectPrefix}blogPostTeaser_headline {
+					font-size: 1.56rem;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+}
+
+@media ( max-width: 539px ) {
+	.#{$projectPrefix}blog_main {
+		.#{$projectPrefix}relatedPosts {
+			li {
+				width: 100%;
+			}
+		}
+	}
+}

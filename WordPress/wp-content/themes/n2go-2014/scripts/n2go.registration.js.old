@@ -1,0 +1,198 @@
+(function ( $ )
+{
+	$(document).ready(function() {
+		var $registrationForm = $( '.n2go-registrationForm' ).not( '.n2go-registrationForm-minimal' );
+		var $registrationFormWrapper = $registrationForm.closest( '.wpb_row' );
+
+		if ( $registrationForm.length ) {
+			var timer;
+
+			var eventHandler = function () {
+				clearTimeout( timer );
+				timer = setTimeout( refresh, 150 );
+			};
+
+			$( window ).on( 'scroll', eventHandler );
+			$( window ).on( 'resize', eventHandler );
+		}
+
+		function refresh() {
+			var registrationFormRect = $registrationForm[0].getBoundingClientRect();
+			var registrationFormWrapperRect = $registrationFormWrapper[0].getBoundingClientRect();
+
+			if ( window.innerWidth < 768 ) {
+				$registrationForm.css( { 'marginTop': '' } );
+				return;
+			}
+
+			if ( registrationFormRect.bottom <= registrationFormWrapperRect.bottom ) {
+				var top = ($( document ).scrollTop() + $registrationForm.outerHeight()) >= $registrationFormWrapper.outerHeight() ? ($registrationFormWrapper.outerHeight() - $registrationForm.outerHeight()) : $( document ).scrollTop();
+				$registrationForm.animate( {'marginTop' : top}, 300 );
+			}
+		}
+	});
+
+})( jQuery );
+
+(function ( $ )
+{
+	function endsWith( str, suffix )
+	{
+		return str.indexOf( suffix, str.length - suffix.length ) !== -1;
+	}
+
+	function isValidEmailAddress( emailAddress )
+	{
+		var pattern = new RegExp( /[A-Z0-9._%+-]+@[A-Z0-9._%+-]+\.[A-Z0-9._%+-]+/i );
+		return pattern.test( emailAddress );
+	}
+
+	function isValidPw( pw )
+	{
+		var pw = $( '#registerForm #password' ).val();
+		return pw.length > 5;
+	}
+
+	function isValidPwReply( pw, pwReply )
+	{
+		var pw = $( '#registerForm #password' ).val();
+		var pwReply = $( '#registerForm #password_reply' ).val();
+
+		return pw === pwReply;
+	}
+
+	$( document ).ready( function ()
+	{
+		if ( typeof  WordPress.RegistrationForm === 'string' )
+		{
+			var WordPressRegistrationFormString = WordPress.RegistrationForm.replace(/&quot;/g, '"');
+			WordPress.RegistrationForm = $.parseJSON(WordPressRegistrationFormString);
+		}
+
+
+		var $registerInput = $( '.registerinput' );
+
+		$registerInput.focus( function ()
+		{
+			$( this ).addClass( 'registerinput_active' ).removeClass( 'registerinput' );
+			this.select();
+		} );
+
+		$registerInput.blur( function ()
+		{
+			$( this ).addClass( 'registerinput' ).removeClass( 'registerinput_active' );
+		} );
+
+		function validateemail()
+		{
+			var email = $( '#mail' ).val();
+			if ( email != '' )
+			{
+				if ( isValidEmailAddress( email ) )
+				{
+					$.post( '/de/user/index/checkemail', {email : email}, function ( data )
+					{
+						obj = window.eval( data );
+						if ( (obj['error'] == 'false') )
+						{
+							$( '#validEmail' ).html( '<img src="' + WordPress.templateDirectory + '/images/success.png"/>' );
+						}
+						else
+						{
+							$( '#validEmail' ).html( '<img src="' + WordPress.templateDirectory + '/images/fail.png" title="Email exisitiert bereits"/>' );
+							if ( obj['error'].match( '^500' ) == '500' ) //starts with
+								$.jGrowl( WordPress.RegistrationForm.messages.EmailAlreadyExists );
+							else
+								$.jGrowl( WordPress.RegistrationForm.messages.ServerError );
+						}
+					}, 'json' );
+				}
+				else
+				{
+					$( '#validEmail' ).html( '<img src="' + WordPress.templateDirectory + '/images/fail.png"/>' );
+				}
+			}
+			else
+			{
+				$( '#validEmail' ).html( '' );
+			}
+			//force user to use his company email
+			var bad_email_domains = new Array( 'gmail.com', 'googlemail.com', 'freenet.de', 'aol.com', 'aol.de', 'aim.com', 'aim.de', 'ok.de', 'arcor.de', 'gmx.de', 'gmx.net', 'web.de', 't-online.de', 'outlook.com', 'yahoo.de', 'yahoo.com', '1und1.de', '1und1.com' );
+			$.each( bad_email_domains, function ( index, value )
+			{
+				if ( endsWith( email.toLowerCase(), '@' + value ) )
+				{
+					var msg = WordPress.RegistrationForm.messages.ForceCompanyEmail.replace( '%s', value );
+					$.jGrowl( msg );
+					return;
+				}
+			} );
+
+
+		}
+
+		$( '#registerForm #mail' ).blur( function ()
+		{
+			validateemail();
+		} );
+
+		$( '#registerForm #password' ).blur( function ()
+		{
+			var pw = $( '#registerForm #password' ).val();
+			if ( isValidPw( pw ) )
+			{
+				$( '#validPw' ).html( '<img src="' + WordPress.templateDirectory + '/images/success.png" />' );
+
+			}
+			else
+			{
+				$.jGrowl( WordPress.RegistrationForm.messages.InsecurePassword );
+				$( '#validPw' ).html( '<img src="' + WordPress.templateDirectory + '/images/fail.png" />' );
+			}
+		} );
+
+		$( '#registerForm #password_reply' ).blur( function ()
+		{
+			if ( isValidPwReply() )
+			{
+				$( '#validPwReply' ).html( '<img src="' + WordPress.templateDirectory + '/images/success.png" />' );
+
+			}
+			else
+			{
+				$.jGrowl( WordPress.RegistrationForm.messages.PasswordMismatch );
+				$( '#validPwReply' ).html( '<img src="' + WordPress.templateDirectory + '/images/fail.png" />' );
+			}
+		} );
+
+		$( '#registerForm' ).submit( function ()
+		{
+			if ( isValidEmailAddress( $( '#mail' ).val() ) && isValidPw() && isValidPwReply() && $( '#cbterms:checked' ).val() != null )
+			{
+				return true;
+			}
+			else
+			{
+				if ( !isValidEmailAddress( $( '#mail' ).val() ) )
+					$.jGrowl( WordPress.RegistrationForm.messages.InvalidEmailAddress );
+				if ( !isValidPw() )
+					$.jGrowl( WordPress.RegistrationForm.messages.InsecurePassword );
+				if ( !isValidPwReply() )
+					$.jGrowl( WordPress.RegistrationForm.messages.PasswordMismatch );
+				if ( $( '#cbterms:checked' ).val() == null )
+					$.jGrowl( WordPress.RegistrationForm.messages.MustAcceptOurTermsAndConditions );
+				return false;
+			}
+		} );
+		$( '#registerForm' ).append( '<input type="hidden" name="captcha" value="123456">' );
+
+	} );
+
+})( jQuery );
+
+
+
+
+
+
+

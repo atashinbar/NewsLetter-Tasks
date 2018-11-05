@@ -1,0 +1,30 @@
+version: '2'
+
+services:
+  db:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: wp_nl2go
+      MYSQL_USER: wp_user
+      MYSQL_PASSWORD: wp_pass
+    ports:
+      - "3306:3306"
+
+  wp:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    links:
+      - db
+    depends_on:
+      - db
+    environment:
+      MYSQL_HOST: db
+      MYSQL_DATABASE: wp_nl2go
+      MYSQL_USER: wp_user
+      MYSQL_PASSWORD: wp_pass
+    ports:
+      - "80:80"
+    volumes:
+      - ./WordPress:/var/www/html

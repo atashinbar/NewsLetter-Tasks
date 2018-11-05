@@ -1,0 +1,26 @@
+.#{$projectPrefix}offCanvasLanguageSelectorToggle {
+	cursor: pointer;
+	display: none;
+	line-height: 4rem;
+	position: relative;
+}
+
+.#{$projectPrefix}offCanvasLanguageSelectorToggle_flag {
+	display: inline-block;
+	height: 1.1rem;
+	position: relative;
+	top: 3px;
+	width: 1.6rem;
+}
+
+.touch {
+	.#{$projectPrefix}offCanvasLanguageSelectorToggle {
+		display: inline-block;
+	}
+}
+
+@media ( max-width: 859px ) {
+	.#{$projectPrefix}offCanvasLanguageSelectorToggle {
+		display: inline-block;
+	}
+}

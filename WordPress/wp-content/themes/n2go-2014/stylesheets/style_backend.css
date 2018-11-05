@@ -1,0 +1,153 @@
+
+
+
+/* Admin N2Go Pricing */
+.right {
+    float: right !important;
+}
+.left {
+    float: left !important;
+}
+.notification-container {
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    background: white;
+    padding: 15px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.notification-success {
+    border-color: #144a60;
+    background: #0074a2;
+    color: white;
+}
+.notification-error {
+    border-color: #ebccd1;
+    background: #f2dede;
+}
+
+.notification-container, .n2go-pricing-container input[type=text], .n2go-pricing-container input[type=password], .n2go-pricing-container button {
+    max-width: 750px;
+}
+
+/* Forms */
+.n2go-pricing-container .row {
+    margin-top: 20px;
+}
+.n2go-pricing-container div.row:first-child {
+    margin-top: 0;
+}
+.n2go-pricing-container input, .n2go-pricing-container label, .n2go-pricing-container select {
+    height: 35px !important;
+}
+
+.n2go-pricing-container input[type='checkbox'] {
+    height: 16px !important;
+}
+
+.n2go-pricing-container input[type=submit] {
+    width: auto;
+}
+
+.n2go-pricing-container label. .n2go-pricing-container input[type=checkbox] {
+    font-weight: bold;
+    word-wrap: break-word;
+    line-height: 35px;
+}
+
+.n2go-pricing-container input[type=text], .n2go-pricing-container input[type=password], .file_upload_button {
+    width: inherit;
+}
+
+.n2go-pricing-container input[type=text], .n2go-pricing-container select {
+    border: 1px solid #DDDDDD;
+    padding: 0.5% 1%;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.n2go-pricing-container input[type=text] {
+    background-color: white;
+    background-image: -webkit-linear-gradient(bottom, white, #F9F9F9);
+    background-image:    -moz-linear-gradient(bottom, white, #F9F9F9);
+    background-image:     -ms-linear-gradient(bottom, white, #F9F9F9);
+    background-image:      -o-linear-gradient(bottom, white, #F9F9F9);
+    background-image:         linear-gradient(to top, white, #F9F9F9);
+}
+
+.n2go-pricing-container input[type=text]:focus, .n2go-pricing-container select {
+    outline: none;
+}
+
+.n2go-pricing-container input[type=submit], .file_upload_button {
+    line-height: 0;
+    border: 1px solid #0074a2;
+    background: #0074a2;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0 10px;
+    color: white;
+}
+
+.n2go-pricing-container input[type=submit]:hover, .file_upload_button:hover {
+    border-color: #144a60;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* 12 Column Grid System */
+.row {
+    display: table;
+    width: 100%;
+}
+.col {
+    display: table-cell;
+    float: left;
+}
+.col-12 {
+    width: 100%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-1 {
+    width: 8.333%;
+}
+
+
+
+
+
+

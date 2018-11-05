@@ -1,0 +1,18 @@
+.#{$projectPrefix}offCanvasNavigationToggle {
+	cursor: pointer;
+	display: none;
+	height: 20px;
+	margin-right: 1rem;
+	vertical-align: middle;
+	width: 20px;
+
+	svg {
+		vertical-align: top;
+	}
+}
+
+@media ( max-width: 1199px ) {
+	.#{$projectPrefix}offCanvasNavigationToggle {
+		display: inline-block;
+	}
+}

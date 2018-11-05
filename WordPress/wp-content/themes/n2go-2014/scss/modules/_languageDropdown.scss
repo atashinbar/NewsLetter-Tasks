@@ -1,0 +1,72 @@
+.#{$projectPrefix}languageDropdown_select {
+	display: inline-block;
+	line-height: 4rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+		cursor: pointer;
+		position: relative;
+	}
+}
+
+.#{$projectPrefix}languageDropdown_flag {
+	display: inline-block;
+	height: 1.1rem;
+	position: relative;
+	top: 3px;
+	width: 1.6rem;
+}
+
+.#{$projectPrefix}css .#{$projectPrefix}languageDropdown_select,
+.#{$projectPrefix}css .#{$projectPrefix}languageDropdown_list {
+	a {
+		color: #969da2;
+		display: block;
+	}
+}
+
+.#{$projectPrefix}css .#{$projectPrefix}languageDropdown_list {
+	a {
+		padding: 0.4rem 1.5rem;
+	}
+}
+
+.#{$projectPrefix}languageDropdown_list {
+	@include box-shadow( 0 0 1rem #969da2 );
+	background: #fff;
+	list-style: none;
+	margin: 0;
+	padding: 0.8rem 0;
+
+	li {
+		cursor: pointer;
+		display: inline-block;
+		line-height: 2rem;
+
+		&:hover {
+			background: #eee;
+		}
+	}
+}
+
+.#{$projectPrefix}languageDropdown_select {
+	.#{$projectPrefix}languageDropdown_label {
+		display: none;
+	}
+}
+
+.touch {
+	.#{$projectPrefix}languageDropdown,
+	.#{$projectPrefix}languageDropdown_select {
+		display: none;
+	}
+}
+
+@media ( max-width: 859px ) {
+	.#{$projectPrefix}languageDropdown,
+	.#{$projectPrefix}languageDropdown_select {
+		display: none;
+	}
+}

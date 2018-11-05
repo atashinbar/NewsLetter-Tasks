@@ -1,0 +1,18 @@
+.#{$projectPrefix}teaserGrid {
+	margin-left: -1.1rem;
+	margin-right: -1.1rem;
+
+	& > .#{$projectPrefix}gridItem {
+		padding: 0 1.1rem 2.2rem;
+	}
+}
+
+@media ( max-width: 579px ) {
+	.#{$projectPrefix}grid.#{$projectPrefix}teaserGrid {
+		&[data-num-items-per-row="2"] {
+			& > .#{$projectPrefix}gridItem {
+				width: 100%;
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+$n2goSprite: sprite-map( "sprite/*.png", $layout: smart );
+
+@mixin background-sprite( $name, $sprite: $n2goSprite )
+{
+	background: transparent sprite-url( $sprite ) no-repeat sprite-position( $sprite, $name );
+	height: image-height( sprite-file( $sprite, $name ) );
+	width: image-width( sprite-file( $sprite, $name ) );
+}
+
+@mixin background-sprite-hover( $name, $sprite: $n2goSprite )
+{
+	background-image: sprite-url( $sprite );
+	background-position: sprite-position( $sprite, $name );
+}

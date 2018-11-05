@@ -1,0 +1,47 @@
+.#{$projectPrefix}faqCategory {
+	display: block;
+	margin-bottom: 1rem;
+	padding: 0.8rem;
+}
+
+a.#{$projectPrefix}faqCategory {
+	@include transition( all 0.3s ease );
+
+	&:hover {
+		background: #f5f5f5;
+	}
+}
+
+
+.#{$projectPrefix}faqCategory_headline {
+	span {
+		border-bottom: 1px solid #ccc;
+		display: inline-block;
+		margin-bottom: 0.6rem;
+		padding-bottom: 1px;
+	}
+}
+
+.#{$projectPrefix}faqCategory_description {
+	color: #868e95 !important;
+
+	& > *:first-child {
+		margin-top: 0;
+	}
+
+	& > *:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.#{$projectPrefix}css .#{$projectPrefix}faqCategory_topic {
+	background: image-url("../images/glyphicons/halflings/document.png") no-repeat 0 0.6rem;
+	color: #868e95;
+	display: block;
+	padding: 0.4rem 0 0.4rem 2.4rem;
+
+	&:hover {
+		color: #868e95;
+		text-decoration: underline;
+	}
+}

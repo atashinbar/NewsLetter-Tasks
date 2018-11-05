@@ -1,0 +1,49 @@
+.#{$projectPrefix}css {
+	.widget_custom_recent_posts {
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			margin: 1rem 1.5rem 1.5rem 0;
+
+			& > a {
+				@include clearfix;
+				display: block;
+			}
+
+			.imageWrapper {
+				float: left;
+				padding-right: 1rem;
+
+				img {
+					@include border-radius( 50% );
+					height: 3.6rem;
+					width: 3.6rem;
+				}
+			}
+
+			.content {
+				overflow: hidden;
+			}
+
+			.title,
+			.text {
+				@include ellipsis( true );
+				line-height: 1.25;
+			}
+
+			.title {
+				padding: 0.2rem 0;
+			}
+
+			.text {
+				font-size: 1rem;
+				padding-bottom: 0.2rem;
+			}
+		}
+	}
+}
